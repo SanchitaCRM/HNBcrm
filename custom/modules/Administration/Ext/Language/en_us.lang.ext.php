@@ -55,15 +55,6 @@ $mod_strings['LBL_ERR_DIR_MSG'] = 'Some files could not be created. Please check
 
 
 
-
-    $mod_strings['LBL_ICON_PICKER_LINK_NAME'] = 'Custom Icons For Modules';
-    $mod_strings['LBL_ICON_PICKER_LINK_DESCRIPTION'] = 'Custom Icons For Modules';
-    $mod_strings['LBL_ICON_PICKER_SECTION_HEADER'] = 'Custom Icons For Modules';
-    $mod_strings['LBL_ICON_PICKER_SECTION_DESCRIPTION'] = 'Custom Icons For Modules';
-    
-
-
-
 /**
  * Created by PhpStorm.
  * User: will
@@ -100,6 +91,15 @@ $mod_strings['LBL_COLOUR_ADMIN_BTNLNKHOVER'] = 'Button link hover colour: ';
 $mod_strings['LBL_COLOUR_ADMIN_DASHHEAD'] = 'Dashlet header colour: ';
 $mod_strings['LBL_COLOUR_ADMIN_ICON'] = 'Icon colour: ';
 $mod_strings['LBL_COLOUR_ADMIN_TABS'] = 'Menu contents config';
+
+
+
+    $mod_strings['LBL_ICON_PICKER_LINK_NAME'] = 'Custom Icons For Modules';
+    $mod_strings['LBL_ICON_PICKER_LINK_DESCRIPTION'] = 'Custom Icons For Modules';
+    $mod_strings['LBL_ICON_PICKER_SECTION_HEADER'] = 'Custom Icons For Modules';
+    $mod_strings['LBL_ICON_PICKER_SECTION_DESCRIPTION'] = 'Custom Icons For Modules';
+    
+
 
 
 /**

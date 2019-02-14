@@ -1,5 +1,5 @@
 <?php
-// created: 2016-07-13 10:28:48
+// created: 2019-02-14 07:59:13
 $mod_strings = array (
   'LBL_CAMPAIGN_LIST_SUBPANEL_TITLE' => 'Campaigns',
   'LBL_FP_EVENTS_LEADS_1_FROM_FP_EVENTS_TITLE' => 'Events',
@@ -30,14 +30,14 @@ $mod_strings = array (
   'LBL_SIMPLECRM_STATUS' => 'Approval Status',
   'LBL_PARTNER_STATUS' => 'Partner Approval Status',
   'LBL_STATUS' => 'Status:',
-  'LBL_ACCOUNT' => 'Account',
-  'LBL_ACCOUNT_DESCRIPTION' => 'Account Description',
-  'LBL_ACCOUNT_ID' => 'Account ID',
-  'LBL_ACCOUNT_NAME' => 'Account Name:',
-  'LBL_LIST_ACCOUNT_NAME' => 'Account Name',
-  'LBL_CONVERTED_ACCOUNT' => 'Converted Account:',
-  'LNK_SELECT_ACCOUNTS' => ' OR Select Account',
-  'LNK_NEW_ACCOUNT' => 'Create Account',
+  'LBL_ACCOUNT' => 'Customer',
+  'LBL_ACCOUNT_DESCRIPTION' => 'Customer Description',
+  'LBL_ACCOUNT_ID' => 'Customer ID',
+  'LBL_ACCOUNT_NAME' => 'Customer Name:',
+  'LBL_LIST_ACCOUNT_NAME' => 'Customer Name',
+  'LBL_CONVERTED_ACCOUNT' => 'Converted Customer:',
+  'LNK_SELECT_ACCOUNTS' => ' OR Select Customer',
+  'LNK_NEW_ACCOUNT' => 'Create Customer',
   'LBL_LOAN_TYPE' => 'Loan Type',
   'LBL_CATEGORY' => 'Category',
 );

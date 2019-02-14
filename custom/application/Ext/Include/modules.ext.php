@@ -3,9 +3,30 @@
 
  
  //WARNING: The contents of this file are auto-generated
+$beanList['simpl_Cloud_Agent'] = 'simpl_Cloud_Agent';
+$beanFiles['simpl_Cloud_Agent'] = 'modules/simpl_Cloud_Agent/simpl_Cloud_Agent.php';
+$moduleList[] = 'simpl_Cloud_Agent';
+
+
+ 
+ //WARNING: The contents of this file are auto-generated
 $beanList['scrm_Feedback'] = 'scrm_Feedback';
 $beanFiles['scrm_Feedback'] = 'modules/scrm_Feedback/scrm_Feedback.php';
 $moduleList[] = 'scrm_Feedback';
+
+
+ 
+ //WARNING: The contents of this file are auto-generated
+$beanList['scrm_Escalation_Audit'] = 'scrm_Escalation_Audit';
+$beanFiles['scrm_Escalation_Audit'] = 'modules/scrm_Escalation_Audit/scrm_Escalation_Audit.php';
+$moduleList[] = 'scrm_Escalation_Audit';
+
+
+ 
+ //WARNING: The contents of this file are auto-generated
+$beanList['scrm_Escalation_Matrix'] = 'scrm_Escalation_Matrix';
+$beanFiles['scrm_Escalation_Matrix'] = 'modules/scrm_Escalation_Matrix/scrm_Escalation_Matrix.php';
+$moduleList[] = 'scrm_Escalation_Matrix';
 
 
 
@@ -25,30 +46,9 @@ $modInvisList[] = 'AM_ProjectHolidays';
 
  
  //WARNING: The contents of this file are auto-generated
-$beanList['scrm_SMS_Workflow'] = 'scrm_SMS_Workflow';
-$beanFiles['scrm_SMS_Workflow'] = 'modules/scrm_SMS_Workflow/scrm_SMS_Workflow.php';
-$moduleList[] = 'scrm_SMS_Workflow';
-
-
- 
- //WARNING: The contents of this file are auto-generated
-$beanList['scrm_Escalation_Matrix'] = 'scrm_Escalation_Matrix';
-$beanFiles['scrm_Escalation_Matrix'] = 'modules/scrm_Escalation_Matrix/scrm_Escalation_Matrix.php';
-$moduleList[] = 'scrm_Escalation_Matrix';
-
-
- 
- //WARNING: The contents of this file are auto-generated
-$beanList['scrm_Escalation_Audit'] = 'scrm_Escalation_Audit';
-$beanFiles['scrm_Escalation_Audit'] = 'modules/scrm_Escalation_Audit/scrm_Escalation_Audit.php';
-$moduleList[] = 'scrm_Escalation_Audit';
-
-
- 
- //WARNING: The contents of this file are auto-generated
-$beanList['SF_Sales_Forecast'] = 'SF_Sales_Forecast';
-$beanFiles['SF_Sales_Forecast'] = 'modules/SF_Sales_Forecast/SF_Sales_Forecast.php';
-$moduleList[] = 'SF_Sales_Forecast';
+$beanList['scrm_Partner_Contacts'] = 'scrm_Partner_Contacts';
+$beanFiles['scrm_Partner_Contacts'] = 'modules/scrm_Partner_Contacts/scrm_Partner_Contacts.php';
+$moduleList[] = 'scrm_Partner_Contacts';
 
 
  
@@ -67,23 +67,23 @@ $moduleList[] = 'scrm_SMS_Template';
 
  
  //WARNING: The contents of this file are auto-generated
+$beanList['scrm_SMS_Workflow'] = 'scrm_SMS_Workflow';
+$beanFiles['scrm_SMS_Workflow'] = 'modules/scrm_SMS_Workflow/scrm_SMS_Workflow.php';
+$moduleList[] = 'scrm_SMS_Workflow';
+
+
+ 
+ //WARNING: The contents of this file are auto-generated
+$beanList['SF_Sales_Forecast'] = 'SF_Sales_Forecast';
+$beanFiles['SF_Sales_Forecast'] = 'modules/SF_Sales_Forecast/SF_Sales_Forecast.php';
+$moduleList[] = 'SF_Sales_Forecast';
+
+
+ 
+ //WARNING: The contents of this file are auto-generated
 $beanList['lb_set_field_background'] = 'lb_set_field_background';
 $beanFiles['lb_set_field_background'] = 'modules/lb_set_field_background/lb_set_field_background.php';
 $moduleList[] = 'lb_set_field_background';
-
-
- 
- //WARNING: The contents of this file are auto-generated
-$beanList['simpl_Cloud_Agent'] = 'simpl_Cloud_Agent';
-$beanFiles['simpl_Cloud_Agent'] = 'modules/simpl_Cloud_Agent/simpl_Cloud_Agent.php';
-$moduleList[] = 'simpl_Cloud_Agent';
-
-
- 
- //WARNING: The contents of this file are auto-generated
-$beanList['scrm_Partner_Contacts'] = 'scrm_Partner_Contacts';
-$beanFiles['scrm_Partner_Contacts'] = 'modules/scrm_Partner_Contacts/scrm_Partner_Contacts.php';
-$moduleList[] = 'scrm_Partner_Contacts';
 
 
 ?>

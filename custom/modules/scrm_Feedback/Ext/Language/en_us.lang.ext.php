@@ -1,10 +1,6 @@
 <?php 
  //WARNING: The contents of this file are auto-generated
 
-
-//THIS FILE IS AUTO GENERATED, DO NOT MODIFY
-$mod_strings['LBL_CASES_SCRM_FEEDBACK_1_FROM_CASES_TITLE'] = 'Cases';
-
  
  // created: 2017-09-14 13:39:47
 $mod_strings['LBL_FEEDBACK_RESOLUTION_TIME'] = 'Was your issue resolved the first time you reported it?';
@@ -19,5 +15,9 @@ $mod_strings['LBL_FEEDBACK_DATE_ENTERED'] = 'Date Entered';
 $mod_strings['LBL_FEEDBACK_DESCRIPTION'] = 'Remarks/Comments';
 
 
+
+
+//THIS FILE IS AUTO GENERATED, DO NOT MODIFY
+$mod_strings['LBL_CASES_SCRM_FEEDBACK_1_FROM_CASES_TITLE'] = 'Cases';
 
 ?>

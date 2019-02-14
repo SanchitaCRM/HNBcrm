@@ -2,24 +2,6 @@
  //WARNING: The contents of this file are auto-generated
 
 
- // created: 2017-09-14 13:35:04
-$dictionary['scrm_Partner_Contacts']['fields']['portal_username_c']['inline_edit']='';
-$dictionary['scrm_Partner_Contacts']['fields']['portal_username_c']['labelValue']='Portal Username';
-
- 
-
- // created: 2017-09-14 13:35:04
-$dictionary['scrm_Partner_Contacts']['fields']['portal_password_c']['inline_edit']='';
-$dictionary['scrm_Partner_Contacts']['fields']['portal_password_c']['labelValue']='Portal Password';
-
- 
-
- // created: 2017-09-14 13:35:04
-$dictionary['scrm_Partner_Contacts']['fields']['portal_active_c']['inline_edit']='';
-$dictionary['scrm_Partner_Contacts']['fields']['portal_active_c']['labelValue']='Portal Active';
-
- 
-
 // created: 2017-09-14 13:26:02
 $dictionary["scrm_Partner_Contacts"]["fields"]["scrm_partner_contacts_leads"] = array (
   'name' => 'scrm_partner_contacts_leads',
@@ -66,4 +48,22 @@ $dictionary["scrm_Partner_Contacts"]["fields"]["scrm_partners_scrm_partner_conta
   'vname' => 'LBL_SCRM_PARTNERS_SCRM_PARTNER_CONTACTS_1_FROM_SCRM_PARTNER_CONTACTS_TITLE',
 );
 
+
+ // created: 2017-09-14 13:35:04
+$dictionary['scrm_Partner_Contacts']['fields']['portal_active_c']['inline_edit']='';
+$dictionary['scrm_Partner_Contacts']['fields']['portal_active_c']['labelValue']='Portal Active';
+
+ 
+
+ // created: 2017-09-14 13:35:04
+$dictionary['scrm_Partner_Contacts']['fields']['portal_password_c']['inline_edit']='';
+$dictionary['scrm_Partner_Contacts']['fields']['portal_password_c']['labelValue']='Portal Password';
+
+ 
+
+ // created: 2017-09-14 13:35:04
+$dictionary['scrm_Partner_Contacts']['fields']['portal_username_c']['inline_edit']='';
+$dictionary['scrm_Partner_Contacts']['fields']['portal_username_c']['labelValue']='Portal Username';
+
+ 
 ?>

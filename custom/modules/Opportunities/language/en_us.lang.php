@@ -1,5 +1,5 @@
 <?php
-// created: 2016-07-13 10:28:48
+// created: 2019-02-14 07:59:13
 $mod_strings = array (
   'TWITTER_USER_C' => 'Twitter User',
   'LBL_DOCUMENTS_SUBPANEL_TITLE' => 'Documents',
@@ -16,8 +16,8 @@ $mod_strings = array (
   'LBL_ACTUAL_DATE_CLOSED' => 'Actual Date Closed',
   'LBL_DATE_LOST_C' => 'Date Lost',
   'LBL_REASON_FOR_LOST' => 'Reason for Lost',
-  'LBL_ACCOUNT_NAME' => 'Account Name:',
-  'LBL_ACCOUNTS' => 'Accounts',
-  'LBL_ACCOUNT_ID' => 'Account ID',
-  'LBL_LIST_ACCOUNT_NAME' => 'Account Name',
+  'LBL_ACCOUNT_NAME' => 'Customer Name:',
+  'LBL_ACCOUNTS' => 'Customers',
+  'LBL_ACCOUNT_ID' => 'Customer ID',
+  'LBL_LIST_ACCOUNT_NAME' => 'Customer Name',
 );

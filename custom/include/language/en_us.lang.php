@@ -183,11 +183,6 @@ $GLOBALS['app_list_strings']['category_list']=array (
   'Hot' => 'Hot',
   'Warm' => 'Warm',
 );
-$app_list_strings['moduleList']['Accounts']='Accounts';
-$app_list_strings['moduleListSingular']['Accounts']='Account';
-$app_list_strings['record_type_display']['Accounts']='Account';
-$app_list_strings['parent_type_display']['Accounts']='Account';
-$app_list_strings['record_type_display_notes']['Accounts']='Account';
 $GLOBALS['app_list_strings']['region_list']=array (
   '' => '',
   'Asia' => 'Asia',
@@ -237,4 +232,14 @@ $GLOBALS['app_list_strings']['lead_source_dom']=array (
   'Email' => 'Email',
   'Campaign' => 'Campaign',
   'Other' => 'Other',
+);
+$app_list_strings['moduleList']['Accounts']='Customers';
+$app_list_strings['moduleListSingular']['Accounts']='Customer';
+$app_list_strings['record_type_display']['Accounts']='Customer';
+$app_list_strings['parent_type_display']['Accounts']='Customer';
+$app_list_strings['record_type_display_notes']['Accounts']='Customer';
+$GLOBALS['app_list_strings']['gender_0']=array (
+  'male' => 'Male',
+  'female' => 'Female',
+  'other' => 'Other',
 );

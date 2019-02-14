@@ -1,5 +1,5 @@
 <?php
-// created: 2016-08-18 12:33:53
+// created: 2019-02-14 07:59:13
 $mod_strings = array (
   'LBL_DOCUMENTS_SUBPANEL_TITLE' => 'Documents',
   'LBL_CONTACTS_SUBPANEL_TITLE' => 'Contacts',
@@ -33,10 +33,10 @@ $mod_strings = array (
   'LBL_ESCALATION_LEVEL_1_CHECKBOX' => 'escalation level 1 checkbox',
   'LBL_ESCALATION_LEVEL_2_CHECKBOX' => 'escalation level 2 checkbox',
   'LBL_ESCALATION_LEVEL_3_CHECKBOX' => 'escalation level 3 checkbox',
-  'LBL_ACCOUNT_NAME' => 'Account Name:',
-  'LBL_ACCOUNT_ID' => 'Account ID',
-  'LBL_ACCOUNT' => 'Account',
-  'LBL_LIST_ACCOUNT_NAME' => 'Account Name',
+  'LBL_ACCOUNT_NAME' => 'Customer Name:',
+  'LBL_ACCOUNT_ID' => 'Customer ID',
+  'LBL_ACCOUNT' => 'Customer',
+  'LBL_LIST_ACCOUNT_NAME' => 'Customer Name',
   'LBL_REGION' => 'Region',
   'LBL_COUNTRY' => 'Country',
 );

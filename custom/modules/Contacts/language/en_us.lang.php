@@ -1,5 +1,5 @@
 <?php
-// created: 2017-02-13 18:54:34
+// created: 2019-02-14 07:59:13
 $mod_strings = array (
   'LBL_DOCUMENTS_SUBPANEL_TITLE' => 'Documents',
   'LBL_OPPORTUNITIES_SUBPANEL_TITLE' => 'Opportunities',
@@ -24,9 +24,9 @@ $mod_strings = array (
   'LBL_COUNTRY' => 'Country',
   'LBL_STATE' => 'State',
   'LBL_CITY' => 'City',
-  'LBL_ACCOUNT_NAME' => 'Account Name:',
-  'LBL_ACCOUNT_ID' => 'Account ID:',
-  'LBL_ACCOUNT' => 'Account',
-  'LBL_LIST_ACCOUNT_NAME' => 'Account Name',
+  'LBL_ACCOUNT_NAME' => 'Customer Name:',
+  'LBL_ACCOUNT_ID' => 'Customer ID:',
+  'LBL_ACCOUNT' => 'Customer',
+  'LBL_LIST_ACCOUNT_NAME' => 'Customer Name',
   'LBL_PRIMARY_ADDRESS_STREET' => 'Address Street',
 );

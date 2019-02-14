@@ -3,19 +3,14 @@
 
 
  // created: 2019-02-02 14:27:37
-$dictionary['scrm_SMS_Workflow']['fields']['parent_name']['inline_edit']='1';
-$dictionary['scrm_SMS_Workflow']['fields']['parent_name']['labelValue']='Parent Name';
-
- 
-
- // created: 2019-02-02 14:27:37
 $dictionary['scrm_SMS_Workflow']['fields']['message_id_c']['inline_edit']='1';
 $dictionary['scrm_SMS_Workflow']['fields']['message_id_c']['labelValue']='Message Id';
 
  
 
  // created: 2019-02-02 14:27:37
-$dictionary['scrm_SMS_Workflow']['fields']['parent_id']['inline_edit']=1;
+$dictionary['scrm_SMS_Workflow']['fields']['message_receiver_c']['inline_edit']='1';
+$dictionary['scrm_SMS_Workflow']['fields']['message_receiver_c']['labelValue']='Message Receiver';
 
  
 
@@ -26,8 +21,13 @@ $dictionary['scrm_SMS_Workflow']['fields']['message_status_c']['labelValue']='Me
  
 
  // created: 2019-02-02 14:27:37
-$dictionary['scrm_SMS_Workflow']['fields']['message_receiver_c']['inline_edit']='1';
-$dictionary['scrm_SMS_Workflow']['fields']['message_receiver_c']['labelValue']='Message Receiver';
+$dictionary['scrm_SMS_Workflow']['fields']['parent_id']['inline_edit']=1;
+
+ 
+
+ // created: 2019-02-02 14:27:37
+$dictionary['scrm_SMS_Workflow']['fields']['parent_name']['inline_edit']='1';
+$dictionary['scrm_SMS_Workflow']['fields']['parent_name']['labelValue']='Parent Name';
 
  
 

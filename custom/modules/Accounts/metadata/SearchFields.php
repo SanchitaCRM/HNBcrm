@@ -1,5 +1,5 @@
 <?php
-// created: 2017-07-26 10:41:42
+// created: 2019-02-14 10:36:40
 $searchFields['Accounts'] = array (
   'name' => 
   array (
@@ -178,5 +178,9 @@ $searchFields['Accounts'] = array (
     array (
       0 => 'id',
     ),
+  ),
+  'email1' => 
+  array (
+    'query_type' => 'default',
   ),
 );

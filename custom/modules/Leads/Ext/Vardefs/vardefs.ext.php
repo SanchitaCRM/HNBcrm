@@ -2,12 +2,6 @@
  //WARNING: The contents of this file are auto-generated
 
 
- // created: 2016-04-15 11:25:55
-$dictionary['Lead']['fields']['post_from_id_c']['inline_edit']='';
-$dictionary['Lead']['fields']['post_from_id_c']['labelValue']='post from id';
-
- 
-
 // created: 2017-09-14 13:26:02
 $dictionary["Lead"]["fields"]["scrm_partner_contacts_leads"] = array (
   'name' => 'scrm_partner_contacts_leads',
@@ -47,33 +41,9 @@ $dictionary["Lead"]["fields"]["scrm_partner_contacts_leadsscrm_partner_contacts_
 );
 
 
- // created: 2016-06-07 20:08:43
-$dictionary['Lead']['fields']['website']['inline_edit']=true;
-$dictionary['Lead']['fields']['website']['comments']='URL of website for the company';
-$dictionary['Lead']['fields']['website']['merge_filter']='disabled';
-
- 
-
- // created: 2016-05-03 15:48:34
-$dictionary['Lead']['fields']['india_c']['inline_edit']='1';
-$dictionary['Lead']['fields']['india_c']['labelValue']='India';
-
- 
-
- // created: 2016-06-15 10:52:25
-$dictionary['Lead']['fields']['simplecrm_status_c']['inline_edit']='';
-$dictionary['Lead']['fields']['simplecrm_status_c']['labelValue']='Approval Status';
-
- 
-
- // created: 2016-06-08 11:36:38
-$dictionary['Lead']['fields']['partner_status_c']['inline_edit']='';
-$dictionary['Lead']['fields']['partner_status_c']['labelValue']='Partner Approval Status';
-
- 
-
- // created: 2015-08-20 11:47:30
-$dictionary['Lead']['fields']['jjwg_maps_geocode_status_c']['inline_edit']=1;
+ // created: 2016-07-11 12:58:47
+$dictionary['Lead']['fields']['category_c']['inline_edit']='1';
+$dictionary['Lead']['fields']['category_c']['labelValue']='Category';
 
  
 
@@ -83,9 +53,35 @@ $dictionary['Lead']['fields']['city_c']['labelValue']='City';
 
  
 
- // created: 2016-05-03 15:51:19
-$dictionary['Lead']['fields']['state_c']['inline_edit']='1';
-$dictionary['Lead']['fields']['state_c']['labelValue']='State';
+ // created: 2016-05-03 15:50:11
+$dictionary['Lead']['fields']['country_c']['inline_edit']='1';
+$dictionary['Lead']['fields']['country_c']['labelValue']='Country';
+
+ 
+
+ // created: 2016-05-03 15:48:34
+$dictionary['Lead']['fields']['india_c']['inline_edit']='1';
+$dictionary['Lead']['fields']['india_c']['labelValue']='India';
+
+ 
+
+ // created: 2015-08-20 11:47:30
+$dictionary['Lead']['fields']['jjwg_maps_address_c']['inline_edit']=1;
+
+ 
+
+ // created: 2015-08-20 11:47:30
+$dictionary['Lead']['fields']['jjwg_maps_geocode_status_c']['inline_edit']=1;
+
+ 
+
+ // created: 2015-08-20 11:47:30
+$dictionary['Lead']['fields']['jjwg_maps_lat_c']['inline_edit']=1;
+
+ 
+
+ // created: 2015-08-20 11:47:30
+$dictionary['Lead']['fields']['jjwg_maps_lng_c']['inline_edit']=1;
 
  
 
@@ -95,20 +91,33 @@ $dictionary['Lead']['fields']['loan_type_c']['labelValue']='Loan Type';
 
  
 
- // created: 2015-08-20 11:47:30
-$dictionary['Lead']['fields']['jjwg_maps_address_c']['inline_edit']=1;
+ // created: 2016-06-08 11:36:38
+$dictionary['Lead']['fields']['partner_status_c']['inline_edit']='';
+$dictionary['Lead']['fields']['partner_status_c']['labelValue']='Partner Approval Status';
 
  
 
- // created: 2016-07-11 12:58:47
-$dictionary['Lead']['fields']['category_c']['inline_edit']='1';
-$dictionary['Lead']['fields']['category_c']['labelValue']='Category';
+ // created: 2016-04-15 11:25:55
+$dictionary['Lead']['fields']['post_from_id_c']['inline_edit']='';
+$dictionary['Lead']['fields']['post_from_id_c']['labelValue']='post from id';
 
  
 
- // created: 2016-04-19 12:47:42
-$dictionary['Lead']['fields']['twitter_handle_c']['inline_edit']='1';
-$dictionary['Lead']['fields']['twitter_handle_c']['labelValue']='twitter handle';
+ // created: 2016-04-15 11:25:03
+$dictionary['Lead']['fields']['posted_message_id_c']['inline_edit']='';
+$dictionary['Lead']['fields']['posted_message_id_c']['labelValue']='posted message id';
+
+ 
+
+ // created: 2016-06-15 10:52:25
+$dictionary['Lead']['fields']['simplecrm_status_c']['inline_edit']='';
+$dictionary['Lead']['fields']['simplecrm_status_c']['labelValue']='Approval Status';
+
+ 
+
+ // created: 2016-05-03 15:51:19
+$dictionary['Lead']['fields']['state_c']['inline_edit']='1';
+$dictionary['Lead']['fields']['state_c']['labelValue']='State';
 
  
 
@@ -120,9 +129,15 @@ $dictionary['Lead']['fields']['status']['merge_filter']='disabled';
 
  
 
- // created: 2019-02-02 14:20:14
-$dictionary['Lead']['fields']['utm_url_c']['inline_edit']=1;
-$dictionary['Lead']['fields']['utm_url_c']['duplicate_merge_dom_value']=0;
+ // created: 2016-04-19 12:48:24
+$dictionary['Lead']['fields']['tweet_id_c']['inline_edit']='1';
+$dictionary['Lead']['fields']['tweet_id_c']['labelValue']='tweet id';
+
+ 
+
+ // created: 2016-04-19 12:47:42
+$dictionary['Lead']['fields']['twitter_handle_c']['inline_edit']='1';
+$dictionary['Lead']['fields']['twitter_handle_c']['labelValue']='twitter handle';
 
  
 
@@ -132,37 +147,22 @@ $dictionary['Lead']['fields']['type_c']['labelValue']='Type';
 
  
 
- // created: 2015-08-20 11:47:30
-$dictionary['Lead']['fields']['jjwg_maps_lat_c']['inline_edit']=1;
-
- 
-
- // created: 2016-04-19 12:48:24
-$dictionary['Lead']['fields']['tweet_id_c']['inline_edit']='1';
-$dictionary['Lead']['fields']['tweet_id_c']['labelValue']='tweet id';
-
- 
-
- // created: 2016-04-15 11:25:03
-$dictionary['Lead']['fields']['posted_message_id_c']['inline_edit']='';
-$dictionary['Lead']['fields']['posted_message_id_c']['labelValue']='posted message id';
-
- 
-
  // created: 2019-02-02 14:20:14
 $dictionary['Lead']['fields']['utm_campaign_c']['inline_edit']=1;
 $dictionary['Lead']['fields']['utm_campaign_c']['duplicate_merge_dom_value']=0;
 
  
 
- // created: 2016-05-03 15:50:11
-$dictionary['Lead']['fields']['country_c']['inline_edit']='1';
-$dictionary['Lead']['fields']['country_c']['labelValue']='Country';
+ // created: 2019-02-02 14:20:14
+$dictionary['Lead']['fields']['utm_url_c']['inline_edit']=1;
+$dictionary['Lead']['fields']['utm_url_c']['duplicate_merge_dom_value']=0;
 
  
 
- // created: 2015-08-20 11:47:30
-$dictionary['Lead']['fields']['jjwg_maps_lng_c']['inline_edit']=1;
+ // created: 2016-06-07 20:08:43
+$dictionary['Lead']['fields']['website']['inline_edit']=true;
+$dictionary['Lead']['fields']['website']['comments']='URL of website for the company';
+$dictionary['Lead']['fields']['website']['merge_filter']='disabled';
 
  
 ?>

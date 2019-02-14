@@ -27,15 +27,15 @@ $layout_defs["Cases"]["subpanel_setup"]['cases_scrm_feedback_1'] = array (
 
 
 //auto-generated file DO NOT EDIT
+$layout_defs['Cases']['subpanel_setup']['bugs']['override_subpanel_name'] = 'Case_subpanel_bugs';
+
+
+//auto-generated file DO NOT EDIT
 $layout_defs['Cases']['subpanel_setup']['cases_scrm_feedback_1']['override_subpanel_name'] = 'Case_subpanel_cases_scrm_feedback_1';
 
 
 //auto-generated file DO NOT EDIT
-$layout_defs['Cases']['subpanel_setup']['securitygroups']['override_subpanel_name'] = 'Case_subpanel_securitygroups';
-
-
-//auto-generated file DO NOT EDIT
-$layout_defs['Cases']['subpanel_setup']['project']['override_subpanel_name'] = 'Case_subpanel_project';
+$layout_defs['Cases']['subpanel_setup']['contacts']['override_subpanel_name'] = 'Case_subpanel_contacts';
 
 
 //auto-generated file DO NOT EDIT
@@ -43,10 +43,10 @@ $layout_defs['Cases']['subpanel_setup']['documents']['override_subpanel_name'] =
 
 
 //auto-generated file DO NOT EDIT
-$layout_defs['Cases']['subpanel_setup']['bugs']['override_subpanel_name'] = 'Case_subpanel_bugs';
+$layout_defs['Cases']['subpanel_setup']['project']['override_subpanel_name'] = 'Case_subpanel_project';
 
 
 //auto-generated file DO NOT EDIT
-$layout_defs['Cases']['subpanel_setup']['contacts']['override_subpanel_name'] = 'Case_subpanel_contacts';
+$layout_defs['Cases']['subpanel_setup']['securitygroups']['override_subpanel_name'] = 'Case_subpanel_securitygroups';
 
 ?>

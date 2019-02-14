@@ -42,11 +42,6 @@ array (
           'newTab' => false,
           'panelDefault' => 'expanded',
         ),
-        'LBL_PANEL_ADVANCED' => 
-        array (
-          'newTab' => false,
-          'panelDefault' => 'expanded',
-        ),
       ),
     ),
     'panels' => 
@@ -64,51 +59,77 @@ array (
               'required' => true,
             ),
           ),
-          1 => 
-          array (
-            'name' => 'phone_office',
-            'label' => 'LBL_PHONE_OFFICE',
-          ),
         ),
         1 => 
         array (
           0 => 
           array (
-            'name' => 'website',
-            'type' => 'link',
-            'label' => 'LBL_WEBSITE',
-          ),
-          1 => 
-          array (
-            'name' => 'phone_fax',
-            'label' => 'LBL_FAX',
+            'name' => 'nic_c',
+            'label' => 'LBL_NIC',
           ),
         ),
         2 => 
         array (
           0 => 
           array (
-            'name' => 'email1',
-            'studio' => 'false',
-            'label' => 'LBL_EMAIL',
+            'name' => 'pp_number_c',
+            'label' => 'LBL_PP_NUMBER',
           ),
         ),
         3 => 
         array (
           0 => 
           array (
-            'name' => 'billing_address_street',
-            'hideLabel' => true,
-            'type' => 'address',
-            'displayParams' => 
-            array (
-              'key' => 'billing',
-              'rows' => 2,
-              'cols' => 30,
-              'maxlength' => 150,
-            ),
+            'name' => 'dob_c',
+            'label' => 'LBL_DOB',
           ),
           1 => 
+          array (
+            'name' => 'gender_c',
+            'studio' => 'visible',
+            'label' => 'LBL_GENDER',
+          ),
+        ),
+        4 => 
+        array (
+          0 => 
+          array (
+            'name' => 'kyc_completed_c',
+            'label' => 'LBL_KYC_COMPLETED',
+          ),
+          1 => 
+          array (
+            'name' => 'first_a_c_date_c',
+            'label' => 'LBL_FIRST_A_C_DATE',
+          ),
+        ),
+        5 => 
+        array (
+          0 => 
+          array (
+            'name' => 'product_holdings_c',
+            'studio' => 'visible',
+            'label' => 'LBL_PRODUCT_HOLDINGS',
+          ),
+          1 => '',
+        ),
+        6 => 
+        array (
+          0 => 
+          array (
+            'name' => 'cross_up_sell_opportunities_c',
+            'studio' => 'visible',
+            'label' => 'LBL_CROSS_UP_SELL_OPPORTUNITIES',
+          ),
+          1 => 
+          array (
+            'name' => 'occupation_c',
+            'label' => 'LBL_OCCUPATION',
+          ),
+        ),
+        7 => 
+        array (
+          0 => 
           array (
             'name' => 'shipping_address_street',
             'hideLabel' => true,
@@ -122,43 +143,49 @@ array (
               'maxlength' => 150,
             ),
           ),
+          1 => 
+          array (
+            'name' => 'billing_address_street',
+            'hideLabel' => true,
+            'type' => 'address',
+            'displayParams' => 
+            array (
+              'key' => 'billing',
+              'rows' => 2,
+              'cols' => 30,
+              'maxlength' => 150,
+            ),
+          ),
         ),
-        4 => 
+        8 => 
         array (
           0 => 
           array (
-            'name' => 'description',
-            'label' => 'LBL_DESCRIPTION',
+            'name' => 'mothers_maiden_name_c',
+            'label' => 'LBL_MOTHERS_MAIDEN_NAME',
+          ),
+          1 => 
+          array (
+            'name' => 'priority_y_n_c',
+            'label' => 'LBL_PRIORITY_Y_N',
           ),
         ),
-        5 => 
+        9 => 
+        array (
+          0 => 
+          array (
+            'name' => 'remarks_c',
+            'studio' => 'visible',
+            'label' => 'LBL_REMARKS',
+          ),
+        ),
+        10 => 
         array (
           0 => 
           array (
             'name' => 'assigned_user_name',
             'label' => 'LBL_ASSIGNED_TO',
           ),
-        ),
-      ),
-      'LBL_PANEL_ADVANCED' => 
-      array (
-        0 => 
-        array (
-          0 => 'account_type',
-          1 => 'industry',
-        ),
-        1 => 
-        array (
-          0 => 'annual_revenue',
-          1 => 'employees',
-        ),
-        2 => 
-        array (
-          0 => 'parent_name',
-        ),
-        3 => 
-        array (
-          0 => 'campaign_name',
         ),
       ),
     ),

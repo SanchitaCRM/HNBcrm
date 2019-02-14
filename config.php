@@ -1,5 +1,5 @@
 <?php
-// created: 2017-07-18 21:37:43
+// created: 2019-02-14 07:59:12
 $sugar_config = array (
   'SAML_X509Cert' => '',
   'SAML_loginurl' => '',
@@ -110,7 +110,6 @@ $sugar_config = array (
     array (
       0 => 'apache',
       1 => 'root',
-      
     ),
   ),
   'currency' => '',
@@ -145,6 +144,8 @@ $sugar_config = array (
     'db_type' => 'mysql',
     'db_port' => '',
     'db_manager' => 'MysqliManager',
+    'use_encryption' => true,
+    'filesystem_encryption_only' => true,
   ),
   'dbconfigoption' => 
   array (
@@ -290,7 +291,7 @@ $sugar_config = array (
   'default_user_name' => '',
   'demoData' => 'yes',
   'developerMode' => false,
-  'disable_convert_lead' => false,
+  'disable_convert_lead' => true,
   'disable_export' => false,
   'disable_persistent_connections' => false,
   'disabled_languages' => 'es_es,ru_ru',
@@ -320,7 +321,7 @@ $sugar_config = array (
   array (
     'list' => 
     array (
-      0 => '161.202.21.7',
+      0 => '161.202.21.12',
     ),
   ),
   'import_max_execution_time' => 3600,
@@ -334,7 +335,7 @@ $sugar_config = array (
     'timeout' => 86400,
   ),
   'js_custom_version' => 1,
-  'js_lang_version' => 5,
+  'js_lang_version' => 6,
   'languages' => 
   array (
     'en_us' => 'English (US)',
@@ -438,10 +439,10 @@ $sugar_config = array (
   'theme_settings' => 
   array (
     'SuiteR' => 
-    array ( 
+    array (
       'display_sidebar' => true,
       'navbar' => '0D2340',
-      'navbar_hover' => '0D2340',
+      'navbar_hover' => 'E9E9E9',
       'navbar_font' => 'F7F7F7',
       'navbar_link_hover' => 'F7F5F2',
       'dropdown_menu' => 'FFFFFF',
@@ -459,6 +460,8 @@ $sugar_config = array (
       'icon' => 'FFFFFF',
       'suggestion_popup_from' => 'FFFFFF',
       'suggestion_popup_to' => '2767A8',
+      'action_menu_button' => 'EEEEEE',
+      'dashlet_headertext' => '3C8DBC',
     ),
     'Suite7' => 
     array (
@@ -528,4 +531,23 @@ $sugar_config = array (
   'use_real_names' => true,
   'vcal_time' => '2',
   'verify_client_ip' => false,
+  'allow_pop_inbound' => true,
+  'external_cache' => 
+  array (
+    'redis' => 
+    array (
+      'host' => '127.0.0.1',
+      'port' => '6379',
+    ),
+  ),
+  'external_cache_disabled_redis' => false,
+  'facebook_keywords_lead' => '',
+  'facebook_keywords_case' => '',
+  'myaddon_setting' => true,
+  'sms_setting' => 
+  array (
+    'sender' => 'TXSMPL',
+    'api_key' => '',
+    'base_url' => 'https://api.textlocal.in/',
+  ),
 );
