@@ -1,0 +1,1 @@
+SELECT `cases`.assigned_user_id AS 'Assigned_to0', COUNT(`cases`.case_number) AS 'Number1' FROM `cases`  WHERE cases.deleted = 0  GROUP BY `cases`.assigned_user_id
