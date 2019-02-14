@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ##SimpleCRM 2.5
 
 This is SimpleCRM software that includes feature and functionality modifications upon on the base platform of SugarCRM Community Edition 6.5.24 and SuiteCRM 7.8.5. 
@@ -76,3 +77,7 @@ The following links offer various ways to view, contribute and collaborate to th
 SuiteCRM is an open source project. As such please do not contact us directly via email or phone for SuiteCRM support. Instead please use our support forum. By using the forum the knowledge is shared with everyone in the community. Our developers answer questions on the forum daily but it also gives the other members of the community the opportunity to contribute. If you would like customisations to specifically fit your SuiteCRM  needs then please use our contact form.
 
 SuiteCRM is published under the AGPLv3 license.
+=======
+# HNBCRM
+testtrial
+>>>>>>> 6fdfd60c3f4156f4b3cf86b2e238c2e39c4a07c2
