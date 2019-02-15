@@ -132,56 +132,7 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_CROSS_UP_SELL_OPPORTUNITIES',
           ),
-        ),
-        6 => 
-        array (
-          0 => 
-          array (
-            'name' => 'shipping_address_street',
-            'label' => 'LBL_SHIPPING_ADDRESS',
-            'type' => 'address',
-            'displayParams' => 
-            array (
-              'key' => 'shipping',
-            ),
-          ),
-          1 => 
-          array (
-            'name' => 'billing_address_street',
-            'label' => 'LBL_BILLING_ADDRESS',
-            'type' => 'address',
-            'displayParams' => 
-            array (
-              'key' => 'billing',
-            ),
-          ),
-        ),
-        7 => 
-        array (
-          0 => 
-          array (
-            'name' => 'mothers_maiden_name_c',
-            'label' => 'LBL_MOTHERS_MAIDEN_NAME',
-          ),
-          1 => 
-          array (
-            'name' => 'priority_y_n_c',
-            'label' => 'LBL_PRIORITY_Y_N',
-          ),
-        ),
-        8 => 
-        array (
-          0 => 
-          array (
-            'name' => 'remarks_c',
-            'studio' => 'visible',
-            'label' => 'LBL_REMARKS',
-          ),
-          1 => 
-          array (
-            'name' => 'assigned_user_name',
-            'label' => 'LBL_ASSIGNED_TO',
-          ),
+          1 => '',
         ),
       ),
     ),
