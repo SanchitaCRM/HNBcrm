@@ -1,10 +1,12 @@
 <?php 
+error_reporting('E_ALL');
+//ini_set('display_errors', 1);
 if (!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 
 class LoginLogoutLogicHook
 {
-    function LoginLogout($bean, $event, $arguments)
-    {	
+    function LoginLogout($bean, $event, $arguments) {	
+      global $db;
       $query = select * from scrm_loginlogout;
       $data = $db->query($query);
       $data = $db->fetchByAssoc($data);
