@@ -10,4 +10,11 @@ $entry_point_registry['QuickCRMgetConfig'] = array(
 
 $entry_point_registry['activities_detailview'] = array('file' => 'include/DetailView/activities_detailview.php', 'auth' => false);
 
+
+ $entry_point_registry['customEntryPoint'] = array(
+ 'file' => 'custom/customEntryPoint.php',
+ 'auth' => true
+ );
+
+
 ?>
