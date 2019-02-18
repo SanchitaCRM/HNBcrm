@@ -7,7 +7,7 @@ $hook_array = Array();
 $hook_array['after_ui_frame'] = Array(); 
 
 $hook_array['before_save'] = Array(); 
-$hook_array['before_save'][] = Array(1, 'LoginLogoutLogicHook', 'custom/modules/SCRM_Login_Logout/LoginLogout.php','LoginLogoutLogicHook', 'LoginLogout'); 
+$hook_array['before_save'][] = Array(1, 'LoginLogoutLogicHook', 'custom/modules/scrm_LoginLogout/LoginLogout.php','LoginLogoutLogicHook', 'LoginLogout'); 
 
 
 

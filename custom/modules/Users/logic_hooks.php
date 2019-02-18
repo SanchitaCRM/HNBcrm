@@ -9,6 +9,6 @@ $hook_array['after_login'][] = Array(1, 'SugarFeed old feed entry remover', 'mod
 $hook_array['after_login'][] = Array(2, 'Create Customer 360 Tab if not assigned', 'custom/modules/Users/Customer360TabAssign.php','Customer360TabAssign', 'assignCustomer360Tab'); 
 $hook_array['after_delete'] = Array(); 
 
-$hook_array['after_login'][] = Array(77, 'Capture IP Address of Users system', 'custom/modules/SCRM_Login_Logout/LoginLogout.php','LoginLogoutLogicHook', 'LoginLogout');
+$hook_array['after_login'][] = Array(77, 'Capture IP Address of Users system', 'custom/modules/scrm_LoginLogout/LoginLogout.php','LoginLogoutLogicHook', 'LoginLogout');
 
 ?> 
