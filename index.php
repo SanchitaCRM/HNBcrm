@@ -42,7 +42,7 @@ if (!defined('sugarEntry')) {
  * display the words  "Powered by SugarCRM" and "Supercharged by SuiteCRM".
  */
 
-ini_set("display_errors", "Off");
+ini_set("display_errors", "On");
 
 include 'include/MVC/preDispatch.php';
 $startTime = microtime(true);
