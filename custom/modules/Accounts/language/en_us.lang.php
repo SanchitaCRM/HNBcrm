@@ -1,11 +1,11 @@
 <?php
-// created: 2019-02-14 10:50:32
+// created: 2019-02-18 04:56:49
 $mod_strings = array (
   'LBL_DOCUMENTS_SUBPANEL_TITLE' => 'Documents',
   'LBL_CONTACTS_SUBPANEL_TITLE' => 'Contacts',
   'LBL_LEADS_SUBPANEL_TITLE' => 'Leads',
   'LBL_MEMBER_ORG_SUBPANEL_TITLE' => 'Member Organizations',
-  'LBL_CASES_SUBPANEL_TITLE' => 'Cases',
+  'LBL_CASES_SUBPANEL_TITLE' => 'Tickets',
   'AOS_Quotes' => 'Quotes',
   'AOS_Invoices' => 'Invoices',
   'AOS_Contracts' => 'Contracts',
@@ -48,4 +48,5 @@ $mod_strings = array (
   'LBL_MOTHERS_MAIDEN_NAME' => 'Mother&#039;s Maiden Name',
   'LBL_EMAIL' => 'Email Address:',
   'LBL_REMARKS' => 'Remarks',
+  'LBL_CASES' => 'Tickets',
 );

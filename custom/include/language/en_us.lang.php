@@ -243,3 +243,8 @@ $GLOBALS['app_list_strings']['gender_0']=array (
   'female' => 'Female',
   'other' => 'Other',
 );
+$app_list_strings['moduleList']['Cases']='Tickets';
+$app_list_strings['moduleListSingular']['Cases']='TIcket';
+$app_list_strings['record_type_display']['Cases']='TIcket';
+$app_list_strings['parent_type_display']['Cases']='TIcket';
+$app_list_strings['record_type_display_notes']['Cases']='TIcket';

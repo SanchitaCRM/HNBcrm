@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ##SimpleCRM 2.5
 
 This is SimpleCRM software that includes feature and functionality modifications upon on the base platform of SugarCRM Community Edition 6.5.24 and SuiteCRM 7.8.5. 
@@ -81,3 +82,7 @@ SuiteCRM is published under the AGPLv3 license.
 # HNBCRM
 testtrial
 >>>>>>> 6fdfd60c3f4156f4b3cf86b2e238c2e39c4a07c2
+=======
+# HNBcrm
+HNB CRM
+>>>>>>> 88b2d72b0e1817d7eeb587d24d359dbc026d4b22

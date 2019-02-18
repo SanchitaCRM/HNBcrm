@@ -1,5 +1,5 @@
 <?php
-// created: 2019-02-14 07:59:13
+// created: 2019-02-18 04:56:49
 $mod_strings = array (
   'LBL_LEADS' => 'Leads',
   'LBL_DESCRIPTION' => 'Note',
@@ -9,4 +9,6 @@ $mod_strings = array (
   'LBL_COMMENT_REPLY_ID' => 'comment reply id',
   'LBL_ACCOUNTS' => 'Customers',
   'LBL_ACCOUNT_ID' => 'Customer ID:',
+  'LBL_CASES' => 'Tickets',
+  'LBL_CASE_ID' => 'TIcket ID:',
 );

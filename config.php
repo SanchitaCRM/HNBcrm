@@ -1,5 +1,5 @@
 <?php
-// created: 2019-02-14 07:59:12
+// created: 2019-02-18 04:56:48
 $sugar_config = array (
   'SAML_X509Cert' => '',
   'SAML_loginurl' => '',
@@ -140,7 +140,7 @@ $sugar_config = array (
     'db_host_instance' => 'SQLEXPRESS',
     'db_user_name' => 'root',
     'db_password' => 'My@SqL!234$',
-    'db_name' => 'SimpleCRMDB',
+    'db_name' => 'SimpleCRMDB2',
     'db_type' => 'mysql',
     'db_port' => '',
     'db_manager' => 'MysqliManager',
@@ -335,7 +335,7 @@ $sugar_config = array (
     'timeout' => 86400,
   ),
   'js_custom_version' => 1,
-  'js_lang_version' => 6,
+  'js_lang_version' => 7,
   'languages' => 
   array (
     'en_us' => 'English (US)',
@@ -430,7 +430,7 @@ $sugar_config = array (
   'session_dir' => '',
   'showDetailData' => true,
   'showThemePicker' => true,
-  'site_url' => 'http://3.0.58.106/SimpleCRM',
+  'site_url' => 'http://3.0.58.106/SimpleCRM2',
   'slow_query_time_msec' => '100',
   'stack_trace_errors' => false,
   'sugar_version' => '6.5.24',
@@ -507,7 +507,7 @@ $sugar_config = array (
   'twitter_page_handle' => '',
   'twitter_page_id' => '',
   'twitter_page_name' => '',
-  'unique_key' => '9ed5a205345cd0c84ef4557327888a4y',
+  'unique_key' => '9ed2a205345cd0c84ef4557327888a4y',
   'upload_badext' => 
   array (
     0 => 'php',

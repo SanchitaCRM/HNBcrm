@@ -86,4 +86,25 @@ $beanFiles['lb_set_field_background'] = 'modules/lb_set_field_background/lb_set_
 $moduleList[] = 'lb_set_field_background';
 
 
+ 
+ //WARNING: The contents of this file are auto-generated
+$beanList['scrm_account'] = 'scrm_account';
+$beanFiles['scrm_account'] = 'modules/scrm_account/scrm_account.php';
+$moduleList[] = 'scrm_account';
+
+
+ 
+ //WARNING: The contents of this file are auto-generated
+$beanList['scrm_LoginLogout'] = 'scrm_LoginLogout';
+$beanFiles['scrm_LoginLogout'] = 'modules/scrm_LoginLogout/scrm_LoginLogout.php';
+$moduleList[] = 'scrm_LoginLogout';
+
+
+ 
+ //WARNING: The contents of this file are auto-generated
+$beanList['scrm_LoginHistory'] = 'scrm_LoginHistory';
+$beanFiles['scrm_LoginHistory'] = 'modules/scrm_LoginHistory/scrm_LoginHistory.php';
+$moduleList[] = 'scrm_LoginHistory';
+
+
 ?>

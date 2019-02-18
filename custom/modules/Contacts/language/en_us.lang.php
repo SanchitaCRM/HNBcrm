@@ -1,11 +1,11 @@
 <?php
-// created: 2019-02-14 07:59:13
+// created: 2019-02-18 04:56:49
 $mod_strings = array (
   'LBL_DOCUMENTS_SUBPANEL_TITLE' => 'Documents',
   'LBL_OPPORTUNITIES_SUBPANEL_TITLE' => 'Opportunities',
   'LBL_LEADS_SUBPANEL_TITLE' => 'Leads',
   'LBL_CAMPAIGN_LIST_SUBPANEL_TITLE' => 'Campaigns',
-  'LBL_CASES_SUBPANEL_TITLE' => 'Cases',
+  'LBL_CASES_SUBPANEL_TITLE' => 'Tickets',
   'LBL_BUGS_SUBPANEL_TITLE' => 'Bugs',
   'LBL_DIRECT_REPORTS_SUBPANEL_TITLE' => 'Direct Reports',
   'LBL_FP_EVENTS_CONTACTS_FROM_FP_EVENTS_TITLE' => 'Events',
@@ -29,4 +29,6 @@ $mod_strings = array (
   'LBL_ACCOUNT' => 'Customer',
   'LBL_LIST_ACCOUNT_NAME' => 'Customer Name',
   'LBL_PRIMARY_ADDRESS_STREET' => 'Address Street',
+  'LBL_CASES' => 'Tickets',
+  'LBL_CONTACTS_CASES_1_FROM_CASES_TITLE' => 'Tickets',
 );

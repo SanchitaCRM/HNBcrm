@@ -245,4 +245,17 @@ $dictionary['Case']['fields']['type']['comments']='The type of issue (ex: issue,
 $dictionary['Case']['fields']['type']['merge_filter']='disabled';
 
  
+
+ // created: 2019-02-18 05:03:03
+$dictionary['Case']['fields']['description']['inline_edit']=true;
+$dictionary['Case']['fields']['description']['comments']='Full text of the description';
+$dictionary['Case']['fields']['description']['merge_filter']='disabled';
+
+ 
+
+ // created: 2019-02-18 06:01:53
+$dictionary['Case']['fields']['ticket_number_c']['inline_edit']='1';
+$dictionary['Case']['fields']['ticket_number_c']['labelValue']='Ticket Number';
+
+ 
 ?>
