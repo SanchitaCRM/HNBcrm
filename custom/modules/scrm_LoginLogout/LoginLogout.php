@@ -5,7 +5,6 @@ if (!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 class LoginLogoutLogicHook
 {
     function LoginLogout($bean, $event, $arguments) {	
-      print_r($bean); 
       global $db;
       $query = 'select * from scrm_loginlogout';
       print_r($query);
