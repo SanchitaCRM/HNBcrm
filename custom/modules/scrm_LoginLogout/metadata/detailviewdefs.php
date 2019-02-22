@@ -58,8 +58,8 @@ array (
           0 => 'date_entered',
           1 => 
           array (
-            'name' => 'total_time_c',
-            'label' => 'LBL_TOTAL_TIME',
+            'name' => 'logout_time_c',
+            'label' => 'LBL_LOGOUT_TIME',
           ),
         ),
         2 => 
@@ -68,11 +68,6 @@ array (
           array (
             'name' => 'ip_address_c',
             'label' => 'LBL_IP_ADDRESS',
-          ),
-          1 => 
-          array (
-            'name' => 'total_logins_per_day_c',
-            'label' => 'LBL_TOTAL_LOGINS_PER_DAY',
           ),
         ),
       ),

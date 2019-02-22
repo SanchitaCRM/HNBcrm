@@ -24,7 +24,7 @@ if (!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 class SendEmail{
     
 	function sendEamilFunction($bean, $event, $arguments){
-
+  //echo "<pre>"; print_r($bean); echo "</pre>"; exit;
 
 global $db;
 global $sugar_config;
@@ -47,14 +47,17 @@ if ($status == 'Closed_Closed' && $feeback_email_sent == 'no'){
 		$obj->retrieve($bean->account_id);
 		require_once('include/SugarPHPMailer.php');
 		$emailObj = new Email();
+    //echo "<pre>"; print_r($emailObj); echo "</pre>"; exit;
 		$defaults = $emailObj->getSystemDefaultEmail();
 		$mail = new SugarPHPMailer();
+  
 		$mail->setMailerForSystem();
-		$mail->From = $defaults['email'];
-		$mail->From .= 'Content-type: text/html\r\n';
+		$mail->From =  $defaults['email'];
+		//$mail->From .= 'Content-type: text/html\r\n';
 		$mail->FromName = $defaults['name'];
 		$subject = 'Case is closed';
 		$mail->Subject = $subject;
+  //echo "<pre>"; print_r($mail); exit;
 		//110.234.25.164
 		$mail->IsHTML(true);
 		$body = <<<EOF
@@ -85,13 +88,7 @@ EOF;
                         $result2 = $db->query($query2);
                 //}
 
-
-
 }
-
-
-
-
 
 	}
 

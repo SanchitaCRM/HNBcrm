@@ -111,12 +111,7 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_PRODUCT_HOLDINGS',
           ),
-          1 => 
-          array (
-            'name' => 'email1',
-            'studio' => 'false',
-            'label' => 'LBL_EMAIL',
-          ),
+          1 => '',
         ),
         6 => 
         array (

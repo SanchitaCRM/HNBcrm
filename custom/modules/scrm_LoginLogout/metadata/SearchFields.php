@@ -1,5 +1,5 @@
 <?php
-// created: 2019-02-18 09:55:48
+// created: 2019-02-19 06:51:03
 $searchFields['scrm_LoginLogout'] = array (
   'name' => 
   array (

@@ -316,7 +316,7 @@ $sugar_config = array (
   'facebook_secret_id' => '',
   'hide_subpanels' => true,
   'history_max_viewed' => 50,
-  'host_name' => 'simplecrmdemo.com',
+  'host_name' => '',
   'http_referer' => 
   array (
     'list' => 

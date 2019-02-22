@@ -23,5 +23,6 @@ $hook_array['after_retrieve'] = Array();
 $hook_array['after_retrieve'][] = Array(77, 'Filter HTML', 'modules/AOP_Case_Updates/CaseUpdatesHook.php','CaseUpdatesHook', 'filterHTML');
 $hook_array['after_save'][] = Array(22, 'SendEmail', 'custom/modules/Cases/send_closed_case_email.php', 'SendEmail', 'sendEamilFunction');
 $hook_array['before_save'][] = Array(2, 'status_closed_cases', 'custom/modules/Cases/status_closed_cases.php','StatusClosedCases', 'statusClosedCases'); 
+$hook_array['before_save'][] = Array(3, 'random number generator', 'custom/modules/Cases/randomGenerator.php','RandomNumberGenerator', 'randomNumber'); 
 
 ?>

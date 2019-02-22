@@ -81,9 +81,11 @@ class CasesViewDetail extends ViewDetail {
 				}
 			});
 		</script>
-dependency;
+    dependency;
 		/******************END - Dependency on Category************************/
-	parent::display();
+
+   
+    parent::display();
  	}
 }
 

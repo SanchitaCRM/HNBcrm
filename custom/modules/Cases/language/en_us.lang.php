@@ -1,5 +1,5 @@
 <?php
-// created: 2019-02-18 06:01:53
+// created: 2019-02-21 08:39:03
 $mod_strings = array (
   'LBL_DOCUMENTS_SUBPANEL_TITLE' => 'Documents',
   'LBL_CONTACTS_SUBPANEL_TITLE' => 'Contacts',
@@ -46,6 +46,9 @@ $mod_strings = array (
   'LBL_SEARCH_FORM_TITLE' => 'TIcket Search',
   'LBL_LIST_MY_CASES' => 'My Open Tickets',
   'LBL_MODULE_NAME' => 'Tickets',
-  'LBL_DESCRIPTION' => 'Ticket Description:',
-  'LBL_TICKET_NUMBER ' => 'Ticket Number',
+  'LBL_DESCRIPTION' => 'Description:',
+  'LBL_LIST_SUBJECT' => 'Ticket',
+  'LBL_UPDATE_TEXT' => '',
+  'LBL_SUBJECT' => 'Ticket:',
+  'LBL_RESOLUTION' => 'Resolution:',
 );

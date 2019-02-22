@@ -157,13 +157,19 @@ $GLOBALS['app_list_strings']['status_list']=array (
   'Converted' => 'Converted to Customer',
   'Dead' => 'Dead',
 );
-$GLOBALS['app_list_strings']['case_type_dom']=array (
+/* $GLOBALS['app_list_strings']['case_type_dom']=array (
   'Minor_Defect' => 'Service Request',
   'Defect' => 'Claim',
   'Change_Request' => 'Complaint',
   'Product_Enhancement_Request' => 'General Feedback',
   'Pre_Sales_Related' => 'Pre Sales Related',
   'Other' => 'Other',
+); */
+
+$GLOBALS['app_list_strings']['case_type_dom']=array (
+  'Minor_Defect' => 'Service Request',
+  'Change_Request' => 'Complaint',
+  'Pre_Sales_Related' => 'Query',
 );
 
 $GLOBALS['app_list_strings']['type_0']=array (

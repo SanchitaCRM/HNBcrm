@@ -32,18 +32,11 @@ array (
     'label' => 'LBL_IP_ADDRESS',
     'width' => '10%',
   ),
-  'TOTAL_TIME_C' => 
+  'LOGOUT_TIME_C' => 
   array (
     'type' => 'datetimecombo',
     'default' => true,
-    'label' => 'LBL_TOTAL_TIME',
-    'width' => '10%',
-  ),
-  'TOTAL_LOGINS_PER_DAY_C' => 
-  array (
-    'type' => 'int',
-    'default' => true,
-    'label' => 'LBL_TOTAL_LOGINS_PER_DAY',
+    'label' => 'LBL_LOGOUT_TIME',
     'width' => '10%',
   ),
 );

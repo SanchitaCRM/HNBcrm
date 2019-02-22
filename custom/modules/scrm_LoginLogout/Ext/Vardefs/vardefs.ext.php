@@ -42,12 +42,6 @@ $dictionary['scrm_LoginLogout']['fields']['ip_address_c']['labelValue']='IP Addr
 
  
 
- // created: 2019-02-18 09:49:44
-$dictionary['scrm_LoginLogout']['fields']['total_time_c']['inline_edit']='1';
-$dictionary['scrm_LoginLogout']['fields']['total_time_c']['labelValue']='Total Time';
-
- 
-
  // created: 2019-02-18 09:55:48
 $dictionary['scrm_LoginLogout']['fields']['total_logins_per_day_c']['inline_edit']='1';
 $dictionary['scrm_LoginLogout']['fields']['total_logins_per_day_c']['labelValue']='Total Logins Per Day';
@@ -66,4 +60,16 @@ $dictionary["scrm_LoginLogout"]["fields"]["scrm_loginlogout_scrm_loginhistory_1"
   'vname' => 'LBL_SCRM_LOGINLOGOUT_SCRM_LOGINHISTORY_1_FROM_SCRM_LOGINHISTORY_TITLE',
 );
 
+
+ // created: 2019-02-19 06:51:03
+$dictionary['scrm_LoginLogout']['fields']['logout_time_c']['inline_edit']='1';
+$dictionary['scrm_LoginLogout']['fields']['logout_time_c']['labelValue']='Logout Time';
+
+ 
+
+ // created: 2019-02-20 08:01:37
+$dictionary['scrm_LoginLogout']['fields']['total_time_c']['inline_edit']='1';
+$dictionary['scrm_LoginLogout']['fields']['total_time_c']['labelValue']='total time';
+
+ 
 ?>

@@ -54,7 +54,7 @@ array (
       array (
         0 => 
         array (
-          0 => 'priority',
+          1 => 'priority',
         ),
         1 => 
         array (
@@ -92,7 +92,6 @@ array (
           array (
             'name' => 'description',
           ),
-          1 => '',
         ),
         5 => 
         array (

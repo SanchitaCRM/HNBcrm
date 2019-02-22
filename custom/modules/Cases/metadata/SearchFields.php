@@ -165,4 +165,8 @@ $searchFields['Cases'] = array (
   array (
     'query_type' => 'default',
   ),
+  'resolution' => 
+  array (
+    'query_type' => 'default',
+  ),
 );

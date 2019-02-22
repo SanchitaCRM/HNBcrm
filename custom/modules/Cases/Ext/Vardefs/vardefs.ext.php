@@ -236,26 +236,36 @@ $dictionary['Case']['fields']['twitter_handle_c']['labelValue']='twitter handle'
 
  
 
- // created: 2016-03-15 17:24:53
-$dictionary['Case']['fields']['type']['default']='Minor_Defect';
-$dictionary['Case']['fields']['type']['len']=100;
-$dictionary['Case']['fields']['type']['inline_edit']=true;
-$dictionary['Case']['fields']['type']['massupdate']=0;
-$dictionary['Case']['fields']['type']['comments']='The type of issue (ex: issue, feature)';
-$dictionary['Case']['fields']['type']['merge_filter']='disabled';
-
- 
-
- // created: 2019-02-18 05:03:03
+ // created: 2019-02-20 13:40:52
 $dictionary['Case']['fields']['description']['inline_edit']=true;
 $dictionary['Case']['fields']['description']['comments']='Full text of the description';
 $dictionary['Case']['fields']['description']['merge_filter']='disabled';
 
  
 
- // created: 2019-02-18 06:01:53
-$dictionary['Case']['fields']['ticket_number_c']['inline_edit']='1';
-$dictionary['Case']['fields']['ticket_number_c']['labelValue']='Ticket Number';
+ // created: 2019-02-22 05:23:44
+$dictionary['Case']['fields']['name']['inline_edit']=true;
+$dictionary['Case']['fields']['name']['comments']='The short description of the bug';
+$dictionary['Case']['fields']['name']['merge_filter']='disabled';
+$dictionary['Case']['fields']['name']['required']=false;
+
+ 
+
+ // created: 2019-02-20 13:06:31
+$dictionary['Case']['fields']['resolution']['required']=true;
+$dictionary['Case']['fields']['resolution']['inline_edit']=true;
+$dictionary['Case']['fields']['resolution']['comments']='The resolution of the case';
+$dictionary['Case']['fields']['resolution']['merge_filter']='disabled';
+
+ 
+
+ // created: 2019-02-21 10:31:35
+$dictionary['Case']['fields']['type']['default']='Pre_Sales_Related';
+$dictionary['Case']['fields']['type']['len']=100;
+$dictionary['Case']['fields']['type']['inline_edit']=true;
+$dictionary['Case']['fields']['type']['massupdate']=0;
+$dictionary['Case']['fields']['type']['comments']='The type of issue (ex: issue, feature)';
+$dictionary['Case']['fields']['type']['merge_filter']='disabled';
 
  
 ?>

@@ -54,7 +54,12 @@ array (
       array (
         0 => 
         array (
-          0 => 'priority',
+          0 => 
+          array (
+            'name' => 'ticket_number_c',
+            'label' => 'LBL_TICKET_NUMBER ',
+          ),
+          1 => 'priority',
         ),
         1 => 
         array (
@@ -101,6 +106,7 @@ array (
             'name' => 'resolution',
             'nl2br' => true,
           ),
+          1 => '',
         ),
         6 => 
         array (
