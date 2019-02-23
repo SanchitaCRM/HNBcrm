@@ -85,6 +85,7 @@ class CasesViewList extends ViewList {
 		$(this).html("<span class='label label-default'>Duplicate</span>");
 		}
 });	
+    actionLinkTop
 			})
 		
 		

@@ -60,6 +60,7 @@ class CasesController extends SugarController{
 		$query1  =   "SELECT id_c FROM cases_cstm, cases WHERE id = id_c AND deleted = 0 AND  tweet_id_c  = '$status_id'";
 		$value1  =   $db->query($query1);
 		$check1  =   $get_values_row1  = $db->fetchByAssoc($value1);
+    //print_r($check1); exit;
 
 		if(!$check1){
 			$case->save();	

@@ -30,7 +30,7 @@ if (!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 
 		function randomNumber($bean, $event, $arguments){
       global $db;
-      $sql = "SELECT count(id) as total FROM cases WHERE deleted='1'";
+      $sql = "SELECT count(id) as total FROM cases";
       $result = $db->query($sql);
       $row = $db->fetchByAssoc($result);
       $ticketNumber = $row['total'];

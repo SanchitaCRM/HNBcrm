@@ -251,16 +251,16 @@ $dictionary['Case']['fields']['name']['required']=false;
 
  
 
- // created: 2019-02-20 13:06:31
-$dictionary['Case']['fields']['resolution']['required']=true;
+ // created: 2019-02-22 13:27:28
+$dictionary['Case']['fields']['resolution']['required']=false;
 $dictionary['Case']['fields']['resolution']['inline_edit']=true;
 $dictionary['Case']['fields']['resolution']['comments']='The resolution of the case';
 $dictionary['Case']['fields']['resolution']['merge_filter']='disabled';
 
  
 
- // created: 2019-02-21 10:31:35
-$dictionary['Case']['fields']['type']['default']='Pre_Sales_Related';
+ // created: 2019-02-22 13:30:16
+$dictionary['Case']['fields']['type']['default']='Change_Request';
 $dictionary['Case']['fields']['type']['len']=100;
 $dictionary['Case']['fields']['type']['inline_edit']=true;
 $dictionary['Case']['fields']['type']['massupdate']=0;
