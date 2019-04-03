@@ -59,6 +59,13 @@ array (
     'label' => 'LBL_DATE_ENTERED',
     'default' => true,
   ),
+  'LEAD_DAYS_C' => 
+  array (
+    'type' => 'varchar',
+    'default' => true,
+    'label' => 'LBL_LEAD_DAYS',
+    'width' => '10%',
+  ),
   'TITLE' => 
   array (
     'width' => '10%',

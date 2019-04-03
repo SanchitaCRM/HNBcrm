@@ -30,7 +30,7 @@ $layout_defs["Accounts"]["subpanel_setup"]['accounts_calls_1'] = array (
 /*Custom remove subpanels*/
 unset($layout_defs['Accounts']['subpanel_setup']['project']);
 
-unset($layout_defs['Accounts']['subpanel_setup']['opportunities']);
+// unset($layout_defs['Accounts']['subpanel_setup']['opportunities']);
 
 unset($layout_defs['Accounts']['subpanel_setup']['campaigns']);
 
@@ -86,14 +86,14 @@ $layout_defs['Accounts']['subpanel_setup']['leads']['override_subpanel_name'] = 
 
 
 //auto-generated file DO NOT EDIT
-$layout_defs['Accounts']['subpanel_setup']['opportunities']['override_subpanel_name'] = 'Account_subpanel_opportunities';
-
-
-//auto-generated file DO NOT EDIT
 $layout_defs['Accounts']['subpanel_setup']['project']['override_subpanel_name'] = 'Account_subpanel_project';
 
 
 //auto-generated file DO NOT EDIT
 $layout_defs['Accounts']['subpanel_setup']['securitygroups']['override_subpanel_name'] = 'Account_subpanel_securitygroups';
+
+
+//auto-generated file DO NOT EDIT
+$layout_defs['Accounts']['subpanel_setup']['opportunities']['override_subpanel_name'] = 'Account_subpanel_opportunities';
 
 ?>

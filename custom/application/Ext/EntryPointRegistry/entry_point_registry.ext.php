@@ -12,8 +12,7 @@ $entry_point_registry['activities_detailview'] = array('file' => 'include/Detail
 
 
  $entry_point_registry['customEntryPoint'] = array(
- 'file' => 'custom/customEntryPoint.php',
- 'auth' => true
+    'file' => 'custom/customEntryPoint.php','auth' => true
  );
 
 

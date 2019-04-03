@@ -12,4 +12,8 @@ $mod_strings['LBL_CASE_ESCALATION'] = 'Case Escalation';
 
     $mod_strings['LBL_DELETINGUNWANTEDDATA'] = 'Deleting the unwanted data';
 
+
+$mod_strings['LBL_CUSTOM_JOB'] = 'Custom Job';
+
+
 ?>

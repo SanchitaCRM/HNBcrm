@@ -15,7 +15,11 @@ array (
           3 => 'FIND_DUPLICATES',
           4 => 
           array (
-            'customCode' => '<input  type="submit" class="button" name="create" id="create" value="Create Case" onClick="document.location=\'index.php?module=Cases&action=EditView&return_module=Cases&return_action=DetailView\'">',
+            'customCode' => '<input type="submit" class="button" name="create" id="create" value="Create Case" onClick="document.location=\'index.php?module=Cases&action=EditView&return_module=Cases&return_action=DetailView\'">',
+          ),
+          5 => 
+          array (
+            'customCode' => '<input type="submit" class="button" name="getpdf" id="getpdf" value="Print PDF" onClick="window.location=\'index.php?module=Cases&action=generatePDF&record={$bean->id}\'">',
           ),
         ),
       ),
@@ -33,15 +37,16 @@ array (
           'field' => '30',
         ),
       ),
-      'useTabs' => true,
+      'useTabs' => false,
       'tabDefs' => 
       array (
         'LBL_CASE_INFORMATION' => 
         array (
-          'newTab' => true,
+          'newTab' => false,
           'panelDefault' => 'expanded',
         ),
       ),
+      'syncDetailEditViews' => true,
     ),
     'panels' => 
     array (
@@ -51,25 +56,15 @@ array (
         array (
           0 => 
           array (
-            'name' => 'case_number',
-            'label' => 'LBL_CASE_NUMBER',
+            'name' => 'name',
+            'label' => 'LBL_SUBJECT',
           ),
           1 => 'priority',
         ),
         1 => 
         array (
-          0 => 
-          array (
-            'name' => 'region_c',
-            'studio' => 'visible',
-            'label' => 'LBL_REGION',
-          ),
-          1 => 
-          array (
-            'name' => 'country_c',
-            'studio' => 'visible',
-            'label' => 'LBL_COUNTRY',
-          ),
+          0 => 'type',
+          1 => 'status',
         ),
         2 => 
         array (
@@ -79,66 +74,35 @@ array (
             'comment' => 'The state of the case (i.e. open/closed)',
             'label' => 'LBL_STATE',
           ),
-          1 => 'status',
+          1 => 'account_name',
         ),
         3 => 
         array (
-          0 => 'type',
-          1 => 'account_name',
-        ),
-        4 => 
-        array (
           0 => 
           array (
-            'name' => 'name',
-            'label' => 'LBL_SUBJECT',
+            'name' => 'suggestion_box',
+            'label' => 'LBL_SUGGESTION_BOX',
           ),
         ),
-        5 => 
+        4 => 
         array (
           0 => 
           array (
             'name' => 'description',
             'customCode' => '{$fields.description.value|html_entity_decode}',
           ),
+          1 => '',
+        ),
+        5 => 
+        array (
+          0 => 'resolution',
         ),
         6 => 
         array (
           0 => 
           array (
-            'name' => 'source_c',
-            'studio' => 'visible',
-            'label' => 'LBL_SOURCE',
-          ),
-          1 => 'resolution',
-        ),
-        7 => 
-        array (
-          0 => 
-          array (
             'name' => 'assigned_user_name',
             'label' => 'LBL_ASSIGNED_TO',
-          ),
-        ),
-        8 => 
-        array (
-          0 => 
-          array (
-            'name' => 'date_entered',
-            'customCode' => '{$fields.date_entered.value} {$APP.LBL_BY} {$fields.created_by_name.value}',
-          ),
-          1 => 
-          array (
-            'name' => 'date_modified',
-            'label' => 'LBL_DATE_MODIFIED',
-            'customCode' => '{$fields.date_modified.value} {$APP.LBL_BY} {$fields.modified_by_name.value}',
-          ),
-        ),
-        9 => 
-        array (
-          0 => 
-          array (
-            'name' => 'contacts_cases_1_name',
           ),
         ),
       ),

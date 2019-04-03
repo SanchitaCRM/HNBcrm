@@ -22,6 +22,9 @@ if(!defined('sugarEntry')) define('sugarEntry', true);
  */
 
 require_once('include/entryPoint.php');
+include('include/tcpdf/config/lang/eng.php');
+include('include/tcpdf/config/tcpdf_config.php');
+include('include/tcpdf/tcpdf.php');
 
 class CasesController extends SugarController{
 
@@ -75,6 +78,7 @@ class CasesController extends SugarController{
 
 		if($row6 = $db->fetchByAssoc($result)){
 			$id_c = $row6['id_c'];                    
+      
 		}
 
 		$data2= array();
@@ -122,5 +126,135 @@ class CasesController extends SugarController{
 
 		echo json_encode($data);
 	}
+  
 
+    public function action_displaypassedids()
+    {
+      $heading = '"Case Number", "Customer Name", "Priority", "State", "Status", "Type", "Ticket", "Description", "Resolution", "Assigned To", "Date Entered", "Date Modified"';
+      $heading.= "\n";
+  
+      global $db; 
+      $recordId = $_REQUEST['uid']; 
+      $ids =  explode(",",$recordId);      
+      $multiIds =  implode("', '",$ids);
+      
+      $sql = "SELECT c.*, a.name as c_name FROM cases c JOIN accounts a ON a.id = c.account_id WHERE c.id IN ('".$multiIds."')";
+      $result = $db->query($sql);
+      $i = 0;
+      while ( $case = $db->fetchByAssoc($result) ) {
+          $cases[] = $case;
+          $heading.= $cases[$i]['case_number'].", ";
+          $heading.= $cases[$i]['c_name'].", ";
+          $heading.= ($cases[$i]['priority'] == "P1") ? "High".", " : ($cases[$i]['priority'] == "P2") ? "Medium".", " : ($cases[$i]['priority'] == "P3") ? "Low".", " : " ";
+          $heading.= $cases[$i]['state'].", ";
+          $heading.= ($cases[$i]['status'] == 'Open_New') ? "New".", " : ($cases[$i]['status'] == 'Open_Assigned') ? "Assigned".", " : ($cases[$i]['status'] == 'Open_Pending Input') ? "Pending Input".", " : ($cases[$i]['status'] == 'Closed_Closed') ? "Closed".", " : ($cases[$i]['status'] == 'Closed_Rejected') ? "Rejected".", " : ($cases[$i]['status'] == 'Closed_Rejected') ? "Duplicate".", " : " ";
+          $heading.= ($cases[$i]['type'] == 'Minor_Defect') ? "Service Request".", " : ($cases[$i]['type'] == 'Change_Request') ? "Complaint".", " : ($cases[$i]['type'] == 'Pre_Sales_Related') ? "Query".", " : " ";
+          $heading.= $cases[$i]['name'].", ";
+          $heading.= $cases[$i]['description'].", ";
+          $heading.= $cases[$i]['resolution'].", ";
+          $heading.= $cases[$i]['assigned_user_id'] ? "Administrator".", " : "User".", ";
+          $heading.= $cases[$i]['date_entered'].", ";
+          $heading.= $cases[$i]['date_modified'];
+          $heading.= "\n";
+          $i++;
+      }
+          
+      ob_clean();
+      header('Content-Type: text/csv; charset=utf-8');
+      header('Content-Disposition: attachment; filename=data.csv');
+      echo $heading;
+      exit;
+    }
+
+  
+    public function action_generatePDF()
+    {
+        $record_id = $this->bean->id;
+        $case_bean = BeanFactory::getBean('Cases', $record_id);
+        
+        $pdf = new TCPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);
+
+        $pdf->SetCreator(PDF_CREATOR);
+        $pdf->SetAuthor('scrm');
+        $pdf->SetTitle('Bank of Maharashtra');
+        $pdf->SetSubject('Head Office');
+        $pdf->SetKeywords('Operations Department');
+        $pdf->SetFont('helvetica', '', 11, '', true);
+
+        //$pdf->SetHeaderData(PDF_HEADER_LOGO, 180,$text1,$text2 );
+
+        // set header and footer fonts````````````
+        $pdf->setHeaderFont(Array(PDF_FONT_NAME_MAIN, '', PDF_FONT_SIZE_MAIN));
+        $pdf->setFooterFont(Array(PDF_FONT_NAME_DATA, '', PDF_FONT_SIZE_DATA));
+
+        // set default monospaced font
+        $pdf->SetDefaultMonospacedFont(PDF_FONT_MONOSPACED);
+
+        //set margins
+        $pdf->SetMargins(PDF_MARGIN_LEFT, 20, PDF_MARGIN_RIGHT);
+        $pdf->SetFooterMargin(10);
+
+        //set auto page breaks
+        $pdf->SetAutoPageBreak(TRUE, PDF_MARGIN_BOTTOM);
+
+        //set image scale factor
+        $pdf->setImageScale(PDF_IMAGE_SCALE_RATIO);
+        //$this->Footer();
+        $pdf->AddPage();
+        
+        $case_id = html_entity_decode($case_bean->id);
+        $case_name = html_entity_decode($case_bean->name);
+        $case_no = html_entity_decode($case_bean->case_number);
+        $type = html_entity_decode($case_bean->type);
+        $status = html_entity_decode($case_bean->status);
+        $state = html_entity_decode($case_bean->state);
+
+        $tbl = <<<EOD
+         <div>
+          <h4 align="center">Note for Sanction for reversal/payment of compensation to the complainant for <br/> Unauthorized Electronic Banking Transactions.</h4><br/>
+          <table border="1">
+            <tr>
+              <th align="center" style="width:200px;">S.N.</th>
+              <th align="center">Particulars</th>
+              <th align="center">Remarks</th>
+            </tr>
+            <tr>
+              <td align="center" style="width:200px;">1</td>
+              <td>Case Name</td>
+              <td>{$case_name}</td>
+            </tr>
+            <tr>
+              <td align="center" style="width:200px;">2</td>
+              <td>Case ID</td>
+              <td>{$case_id}</td>
+            </tr>
+            <tr>
+              <td align="center" style="width:200px;">3</td>
+              <td>Type</td>
+              <td>{$type}</td>
+            </tr>
+            <tr>
+              <td align="center" style="width:200px;">4</td>
+              <td>Case Number</td>
+              <td>{$case_no}</td>
+            </tr>
+             <tr>
+              <td align="center" style="width:200px;">5</td>
+              <td>Status</td>
+              <td>{$status}</td>
+            </tr>
+            <tr>
+              <td align="center" style="width:200px;">6</td>
+              <td>State</td>
+              <td>{$state}</td>
+            </tr>
+          </table>
+        </div>
+EOD;
+
+        $pdf->writeHTML($tbl, true, false, false, false, '');
+        ob_clean();
+        $pdf->Output("download.pdf",'F');
+        $pdf->Output();
+    }
 } 

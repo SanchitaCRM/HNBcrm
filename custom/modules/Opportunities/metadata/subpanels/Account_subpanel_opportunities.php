@@ -1,12 +1,12 @@
 <?php
-// created: 2015-08-27 09:34:57
+// created: 2019-03-15 16:23:07
 $subpanel_layout['list_fields'] = array (
   'name' => 
   array (
     'name' => 'name',
     'vname' => 'LBL_LIST_OPPORTUNITY_NAME',
     'widget_class' => 'SubPanelDetailViewLink',
-    'width' => '15%',
+    'width' => '40%',
     'default' => true,
   ),
   'sales_stage' => 
@@ -23,10 +23,12 @@ $subpanel_layout['list_fields'] = array (
     'width' => '15%',
     'default' => true,
   ),
-  'amount_usdollar' => 
+  'amount' => 
   array (
-    'vname' => 'LBL_LIST_AMOUNT_USDOLLAR',
-    'width' => '15%',
+    'type' => 'currency',
+    'vname' => 'LBL_AMOUNT',
+    'currency_format' => true,
+    'width' => '10%',
     'default' => true,
   ),
   'assigned_user_name' => 

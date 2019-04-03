@@ -53,6 +53,8 @@ class CasesViewList extends ViewList {
 	
 	function preDisplay(){
 		$this->lv = new CasesListViewSmarty();
+    //$this->lv->actionsMenuExtraItems[] = $this->getNewActionMenuItem();
+    $this->lv->actionsMenuExtraItems[] = $this->buildMyMenuItem();
 	}
 	
 	
@@ -87,15 +89,39 @@ class CasesViewList extends ViewList {
 });	
     actionLinkTop
 			})
-		
-		
-		
-		
+	
 		</script>
 EOD;
 		parent::display();
 		
  	}
+  
+  /*private function getNewActionMenuItem(){
+      global $mod_strings;
+      return <<<EOF
+      <a href='javascript:void(0)'
+      onclick="return sListView.send_form(true, 'Cases', 'index.php?entryPoint=customEntryPoint','Please select at least 1 record to proceed.')">
+          {$mod_strings['LBL_NEW_ACTION']}
+      </a>";
+EOF;
+    } */
+  
+   
+ protected function buildMyMenuItem(){
+    global $app_strings;
+
+    return <<<EOHTML
+    <a class="menuItem" style="width:150px;" href="#" onmouseover='hiliteItem(this,"yes");'
+    onmouseout='unhiliteItem(this);'
+    onclick="sugarListView.get_checks();
+    if(sugarListView.get_checks_count() &lt; 1) {
+        alert('{$app_strings['LBL_LISTVIEW_NO_SELECTED']}');
+        return false;
+    }
+    document.MassUpdate.action.value='displaypassedids';
+    document.MassUpdate.submit();">NewExport</a>
+EOHTML;
+    }
 
 }
 

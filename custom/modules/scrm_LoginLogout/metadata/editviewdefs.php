@@ -20,6 +20,15 @@ array (
           'field' => '30',
         ),
       ),
+      'useTabs' => false,
+      'tabDefs' => 
+      array (
+        'DEFAULT' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+      ),
     ),
     'panels' => 
     array (

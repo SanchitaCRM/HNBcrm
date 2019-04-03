@@ -157,4 +157,21 @@ $dictionary['Account']['fields']['remarks_c']['inline_edit']='1';
 $dictionary['Account']['fields']['remarks_c']['labelValue']='Remarks';
 
  
+
+ // created: 2019-03-15 16:14:22
+$dictionary['Account']['fields']['total_opportunities_c']['inline_edit']='1';
+$dictionary['Account']['fields']['total_opportunities_c']['labelValue']='Total Opportunities';
+
+ 
+
+ // created: 2019-03-15 16:14:22
+$dictionary['Account']['fields']['currency_id']['inline_edit']=1;
+
+ 
+
+ // created: 2019-04-03 18:17:04
+$dictionary['Account']['fields']['country_code_c']['inline_edit']='1';
+$dictionary['Account']['fields']['country_code_c']['labelValue']='Country Code';
+
+ 
 ?>

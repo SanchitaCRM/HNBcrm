@@ -43,13 +43,13 @@ array (
     'label' => 'LBL_LIST_SALES_STAGE',
     'default' => true,
   ),
-  'AMOUNT_USDOLLAR' => 
+  'AMOUNT' => 
   array (
-    'width' => '10%',
-    'label' => 'LBL_LIST_AMOUNT_USDOLLAR',
-    'align' => 'right',
-    'default' => true,
+    'type' => 'currency',
+    'label' => 'LBL_AMOUNT',
     'currency_format' => true,
+    'width' => '10%',
+    'default' => true,
   ),
   'DATE_CLOSED' => 
   array (

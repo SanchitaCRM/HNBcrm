@@ -107,4 +107,11 @@ $beanFiles['scrm_LoginHistory'] = 'modules/scrm_LoginHistory/scrm_LoginHistory.p
 $moduleList[] = 'scrm_LoginHistory';
 
 
+ 
+ //WARNING: The contents of this file are auto-generated
+$beanList['scrm_LoginAudit'] = 'scrm_LoginAudit';
+$beanFiles['scrm_LoginAudit'] = 'modules/scrm_LoginAudit/scrm_LoginAudit.php';
+$moduleList[] = 'scrm_LoginAudit';
+
+
 ?>

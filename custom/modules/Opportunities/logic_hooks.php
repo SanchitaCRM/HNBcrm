@@ -9,7 +9,6 @@ $hook_array['before_save'][] = Array(77, 'updateGeocodeInfo', 'modules/Opportuni
 $hook_array['before_save'][] = Array(1, 'Opportunities push feed', 'modules/Opportunities/SugarFeeds/OppFeed.php','OppFeed', 'pushFeed');
 $hook_array['before_save'][] = Array(3,'Update the Opportunities won in sales forecast module','custom/modules/Opportunities/UpdateAmount.php','UpdateAmount','Update_Amount');
 
-
 $hook_array['after_save'] = Array(); 
 $hook_array['after_save'][] = Array(77, 'updateRelatedMeetingsGeocodeInfo', 'modules/Opportunities/OpportunitiesJjwg_MapsLogicHook.php','OpportunitiesJjwg_MapsLogicHook', 'updateRelatedMeetingsGeocodeInfo'); 
 $hook_array['after_save'][] = Array(78, 'updateRelatedProjectGeocodeInfo', 'modules/Opportunities/OpportunitiesJjwg_MapsLogicHook.php','OpportunitiesJjwg_MapsLogicHook', 'updateRelatedProjectGeocodeInfo'); 
@@ -18,6 +17,8 @@ $hook_array['after_relationship_add'][] = Array(77, 'addRelationship', 'modules/
 $hook_array['after_relationship_delete'] = Array(); 
 $hook_array['after_relationship_delete'][] = Array(77, 'deleteRelationship', 'modules/Opportunities/OpportunitiesJjwg_MapsLogicHook.php','OpportunitiesJjwg_MapsLogicHook', 'deleteRelationship'); 
 
-$hook_array['after_save'] = Array();
+$hook_array['after_save'][] = Array(79, 'Total opportunities Amount', 'custom/modules/Opportunities/opportunities.php','OpportunitiesAmount', 'TotalOpportunitiesAmount'); 
+$hook_array['after_delete'] = Array();
+$hook_array['after_delete'][] = Array(77, 'Total opportunities Amount after delete', 'custom/modules/Opportunities/opportunities.php','OpportunitiesAmount', 'deleteOpportunities');
 
 ?>

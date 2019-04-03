@@ -1,5 +1,5 @@
 <?php
-// created: 2019-02-18 04:56:49
+// created: 2019-04-03 18:08:34
 $mod_strings = array (
   'LBL_DOCUMENTS_SUBPANEL_TITLE' => 'Documents',
   'LBL_CONTACTS_SUBPANEL_TITLE' => 'Contacts',
@@ -49,4 +49,6 @@ $mod_strings = array (
   'LBL_EMAIL' => 'Email Address:',
   'LBL_REMARKS' => 'Remarks',
   'LBL_CASES' => 'Tickets',
+  'LBL_TOTAL_OPPORTUNITIES' => 'Total Opportunities',
+  'LBL_COUNTRY_CODE' => 'Country Code',
 );

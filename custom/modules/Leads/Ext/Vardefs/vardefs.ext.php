@@ -165,4 +165,10 @@ $dictionary['Lead']['fields']['website']['comments']='URL of website for the com
 $dictionary['Lead']['fields']['website']['merge_filter']='disabled';
 
  
+
+ // created: 2019-02-28 09:56:09
+$dictionary['Lead']['fields']['lead_days_c']['inline_edit']='1';
+$dictionary['Lead']['fields']['lead_days_c']['labelValue']='Lead Days';
+
+ 
 ?>

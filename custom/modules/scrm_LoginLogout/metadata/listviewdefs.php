@@ -16,27 +16,18 @@ array (
     'width' => '10%',
     'default' => true,
   ),
-  'USERS_SCRM_LOGINLOGOUT_1_NAME' => 
+  'LOGOUT_TIME_C' => 
   array (
-    'type' => 'relate',
-    'link' => true,
-    'label' => 'LBL_USERS_SCRM_LOGINLOGOUT_1_FROM_USERS_TITLE',
-    'id' => 'USERS_SCRM_LOGINLOGOUT_1USERS_IDA',
-    'width' => '10%',
+    'type' => 'datetimecombo',
     'default' => true,
+    'label' => 'LBL_LOGOUT_TIME',
+    'width' => '10%',
   ),
   'IP_ADDRESS_C' => 
   array (
     'type' => 'varchar',
     'default' => true,
     'label' => 'LBL_IP_ADDRESS',
-    'width' => '10%',
-  ),
-  'LOGOUT_TIME_C' => 
-  array (
-    'type' => 'datetimecombo',
-    'default' => true,
-    'label' => 'LBL_LOGOUT_TIME',
     'width' => '10%',
   ),
 );

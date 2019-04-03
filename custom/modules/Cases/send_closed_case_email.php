@@ -21,76 +21,63 @@
  */
 if (!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 
-class SendEmail{
-    
-	function sendEamilFunction($bean, $event, $arguments){
-  //echo "<pre>"; print_r($bean); echo "</pre>"; exit;
+class SendEmail{    
+    function sendEamilFunction($bean, $event, $arguments){
+        global $db, $sugar_config;
 
-global $db;
-global $sugar_config;
+        $id = $bean->id;
+        $status = $bean->status;
 
-$site_url =  $sugar_config['site_url'];
-$site_url =  trim($site_url,"/");
+        if ($status == 'Closed_Closed'){
+            include_once('modules/Accounts/Account.php');
+            $obj = new Account();
+            $obj->retrieve($bean->account_id);
+            require_once('include/SugarPHPMailer.php');
+            $emailObj = new Email();
+            $defaults = $emailObj->getSystemDefaultEmail();
+            $mail = new SugarPHPMailer();
+            $mail->setMailerForSystem();
+            $mail->From =  $defaults['email'];
+            $mail->FromName = $defaults['name'];
+            //$subject = 'Ticket is closed';
+            $subject = 'Email ack for the complaint';
+            $mail->Subject = $subject;
 
-$id = $bean->id;
-$status = $bean->status;
-$GLOBALS['log']->fatal('status : '.$status);
-$feeback_email_sent = $bean->feeback_email_sent_c;
-$GLOBALS['log']->fatal('feeback_email_sent : '.$feeback_email_sent);
-if ($status == 'Closed_Closed' && $feeback_email_sent == 'no'){
-
-//$GLOBALS['log']->fatal('status : '.$status);
-
-		include_once('modules/Accounts/Account.php');
-		$obj = new Account();
-		//$obj->retrieve($_REQUEST['return_id']);
-		$obj->retrieve($bean->account_id);
-		require_once('include/SugarPHPMailer.php');
-		$emailObj = new Email();
-    //echo "<pre>"; print_r($emailObj); echo "</pre>"; exit;
-		$defaults = $emailObj->getSystemDefaultEmail();
-		$mail = new SugarPHPMailer();
-  
-		$mail->setMailerForSystem();
-		$mail->From =  $defaults['email'];
-		//$mail->From .= 'Content-type: text/html\r\n';
-		$mail->FromName = $defaults['name'];
-		$subject = 'Case is closed';
-		$mail->Subject = $subject;
-  //echo "<pre>"; print_r($mail); exit;
-		//110.234.25.164
-		$mail->IsHTML(true);
-		$body = <<<EOF
-<p style = "margin-bottom: 0in;"><span style = "font-size: medium; font-family: verdana,geneva;">Dear <strong>$obj->name</strong><br /></span></p>
-<p style = "margin-bottom: 0in;">&nbsp;</p>
-<p style = "margin-bottom: 0in;"><span style = "font-size: medium; font-family: verdana,geneva;">We hope your case number&nbsp; #<strong>$bean->case_number</strong> has been resolved to full satisfaction. This case has now been closed. In case you face any further issues, please feel free to contact us at <strong> +91 85 5392 1122 </strong> and we will be happy to resolve it for you. Alternately you can write to us at <span style = "color: #0000ff;"><span lang = "en-US"><span style = "text-decoration: underline;"><a href = "mailto:simplecrm2@gmail.com">simplecrm2@gmail.com</a></span></span></span>.</span></p>
-<p style = "margin-bottom: 0in;">&nbsp;</p>
-<p style = "margin-bottom: 0in;"><span style = "font-size: medium; font-family: verdana,geneva;">In our continuous endeavor for service improvement, we request you to spare a few minutes and answer five questions that will help us understand your experience with us better. Please click on the below URL to go to our feedback survey form:</span></p>
-<p style = "margin-bottom: 0in;">&nbsp;</p>
-<p style = "margin-bottom: 0in;"><a href = "$site_url/Survey.php?id=$bean->id&cn=$bean->account_name&ci=$bean->account_id"><strong>click here</strong></a></p>
-<p style = "margin-bottom: 0in;">&nbsp;</p>
-<p style = "margin-bottom: 0in;"><span style = "font-size: medium; font-family: verdana,geneva;">Regards,</span></p>
-<p style = "margin-bottom: 0in;"><span style = "font-size: medium; font-family: verdana,geneva;">Team SimpleCRM Support</span></p>
+            $mail->IsHTML(true);
+          
+            /*$body = <<<EOF
+            <p style = "margin-bottom: 0in;"><span>Dear <strong>$bean->account_name</strong><br/></span></p>
+            <p style = "margin-bottom: 0in;">&nbsp;</p>
+            <p style = "margin-bottom: 0in;"><span>We hope your ticket number&nbsp; #<strong>$bean->name</strong> has been resolved. In case you face any further issues, please feel free to contact us and we will be happy to resolve it for you.<span lang = "en-US"><span style = "text-decoration: underline;"><a href = "mailto:simplecrm2@gmail.com">simplecrm2@gmail.com</a></span></span>.</span></p>
+            <p style = "margin-bottom: 0in;">&nbsp;</p>
+            <p style = "margin-bottom: 0in;"><span>Regards,</span></p>
+            <p style = "margin-bottom: 0in;"><span>Team SimpleCRM Support</span></p>
+EOF;*/
+            
+            $body = <<<EOF
+            <p style = "margin-bottom: 0in;"><span>Dear Sir/Madam, <strong>$bean->account_name</strong>,<br/></span></p>
+            <p style = "margin-bottom: 0in;">&nbsp;</p>
+            <p style = "margin-bottom: 0in;"><span>Thank you for writing to Bank of Maharashtra.</p>
+            <p style = "margin-bottom: 0in;">&nbsp;</p>
+            <p style = "margin-bottom: 0in;"><span>This has been registered in the bank with following Reference Number - Complaint No: <strong>$bean->name</strong></p>
+            <p style = "margin-bottom: 0in;">&nbsp;</p>
+            <p style = "margin-bottom: 0in;"><span>We have received your feedback as : <strong>upi claim amt 500rs date 8feb 2018 CRM11021919211217995 </strong></p>
+            <p style = "margin-bottom: 0in;">&nbsp;</p>
+            <p style = "margin-bottom: 0in;">&nbsp;</p>
+            <p style = "margin-bottom: 0in;"><span>This is system generated mail.</p>
+            <p style = "margin-bottom: 0in;">&nbsp;</p>
+            <p style = "margin-bottom: 0in;">&nbsp;</p>
+            <p style = "margin-bottom: 0in;"><span>Regards,</span></p>
+            <p style = "margin-bottom: 0in;"><span>Asst. Gen. Manager,</span></p>
+            <p style = "margin-bottom: 0in;"><span>Bank of Maharashtra,</span></p>
+            <p style = "margin-bottom: 0in;"><span>Head Office, Pune</span></p>
 EOF;
-		$mail->Body = $body;
-		$mail->prepForOutbound();
-		$email = $obj->email1;
-		$mail->AddAddress($email);
-		//$mail->AddBCC('gagandeep.singh@techliveconnect.com');
-		//@$mail->Send();
-		$GLOBALS['log']->fatal('Email:'.$email);
-		if (!$mail->Send()){
-			$GLOBALS['log']->fatal('Email Send : Error Info:'.$mail->ErrorInfo);
-                }
-
-                //if ($mail->Send()){
-			$query2 = "UPDATE cases_cstm SET feeback_email_sent_c = 'yes'  WHERE id_c = '".$id."'"; 
-                        $result2 = $db->query($query2);
-                //}
-
-}
-
-	}
-
+            $mail->Body = $body;
+            $mail->prepForOutbound();
+            $email = $obj->email1;
+            $mail->AddAddress($email);
+            @$mail->Send();
+        }
+    }
 }
 ?>

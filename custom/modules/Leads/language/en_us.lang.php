@@ -1,5 +1,5 @@
 <?php
-// created: 2019-02-14 07:59:13
+// created: 2019-02-28 09:56:09
 $mod_strings = array (
   'LBL_CAMPAIGN_LIST_SUBPANEL_TITLE' => 'Campaigns',
   'LBL_FP_EVENTS_LEADS_1_FROM_FP_EVENTS_TITLE' => 'Events',
@@ -40,4 +40,5 @@ $mod_strings = array (
   'LNK_NEW_ACCOUNT' => 'Create Customer',
   'LBL_LOAN_TYPE' => 'Loan Type',
   'LBL_CATEGORY' => 'Category',
+  'LBL_LEAD_DAYS' => 'Lead Days',
 );

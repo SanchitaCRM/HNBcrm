@@ -11,7 +11,7 @@ class CasesViewEdit extends ViewEdit {
 
     function display() {
 		  parent::display();
-        echo <<<EOQ
+echo <<<EOQ
 		    <script>
           $(document).ready(function(){
             $('#type').change(function(){ 
@@ -19,15 +19,14 @@ class CasesViewEdit extends ViewEdit {
               if(typeText == 'Minor_Defect'){
                 $("#state").val('Closed');
                 $("#status").html('<option value="Closed_Closed">Closed</option>');
-                $("#state").prop('disabled',false);
+                $("select#state option[value='Closed']").attr("disabled",false);
                 addToValidate('EditView','resolution','TextArea',true,'{$mod_strings['LBL_RESOLUTION']}');
                 $('#resolution_label').html('{$mod_strings['LBL_RESOLUTION']}Resolution: <font color="red">*</font>');
-                //$("#resolution_label").append('<span class="required">*</span>');
                 $("#resolution,#description").parent().parent().show();
               }
               if(typeText == 'Change_Request'){
                 $("#state").val('Open');
-                $("#state").prop('disabled',true);
+                $("select#state option[value='Closed']").attr("disabled",true);
                 $("#status").html('<option value="Open_New">New</option><option value="Open_Assigned">Assigned</option><option value="Open_Pending Input">Pending Input</option>');
                 $("#resolution,#description").parent().parent().show();
                 removeFromValidate('EditView','resolution');                       
@@ -36,7 +35,7 @@ class CasesViewEdit extends ViewEdit {
               if(typeText == 'Pre_Sales_Related'){
                 $("#state").val('Closed');
                 $("#status").html('<option value="Closed_Closed">Closed</option>');
-                $("#state").prop('disabled',false);
+                $("select#state option[value='Closed']").attr("disabled",false);
                 $("#resolution,#description").parent().parent().hide();
               }
             });
@@ -45,6 +44,8 @@ class CasesViewEdit extends ViewEdit {
           });
         </script>
 EOQ;
+  
+      
  	}
 }
 

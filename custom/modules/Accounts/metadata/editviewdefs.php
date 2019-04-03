@@ -43,6 +43,7 @@ array (
           'panelDefault' => 'expanded',
         ),
       ),
+      'syncDetailEditViews' => true,
     ),
     'panels' => 
     array (
@@ -58,6 +59,12 @@ array (
             array (
               'required' => true,
             ),
+          ),
+          1 => 
+          array (
+            'name' => 'mobile_c',
+            'label' => 'LBL_MOBILE',
+            'customCode' => '{html_options name="country_code_c" id="country_code_c" options=$fields.country_code_c.options selected=$fields.country_code_c.value}&nbsp;<input name="mobile_c" id="mobile_c" size="25" maxlength="10" type="text" value="{$fields.mobile_c.value}">',
           ),
         ),
         1 => 

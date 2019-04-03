@@ -44,15 +44,16 @@ array (
           'file' => 'modules/Accounts/Account.js',
         ),
       ),
-      'useTabs' => true,
+      'useTabs' => false,
       'tabDefs' => 
       array (
         'LBL_ACCOUNT_INFORMATION' => 
         array (
-          'newTab' => true,
+          'newTab' => false,
           'panelDefault' => 'expanded',
         ),
       ),
+      'syncDetailEditViews' => true,
     ),
     'panels' => 
     array (
@@ -71,51 +72,54 @@ array (
           ),
           1 => 
           array (
-            'name' => 'nic_c',
-            'label' => 'LBL_NIC',
+            'name' => 'mobile_c',
+            'label' => 'LBL_MOBILE',
           ),
         ),
         1 => 
         array (
           0 => 
           array (
-            'name' => 'pp_number_c',
-            'label' => 'LBL_PP_NUMBER',
-          ),
-          1 => 
-          array (
-            'name' => 'dob_c',
-            'label' => 'LBL_DOB',
+            'name' => 'nic_c',
+            'label' => 'LBL_NIC',
           ),
         ),
         2 => 
         array (
           0 => 
           array (
-            'name' => 'gender_c',
-            'studio' => 'visible',
-            'label' => 'LBL_GENDER',
-          ),
-          1 => 
-          array (
-            'name' => 'kyc_completed_c',
-            'label' => 'LBL_KYC_COMPLETED',
+            'name' => 'pp_number_c',
+            'label' => 'LBL_PP_NUMBER',
           ),
         ),
         3 => 
         array (
           0 => 
           array (
-            'name' => 'first_a_c_date_c',
-            'label' => 'LBL_FIRST_A_C_DATE',
+            'name' => 'dob_c',
+            'label' => 'LBL_DOB',
           ),
           1 => 
           array (
-            'name' => 'occupation_c',
-            'label' => 'LBL_OCCUPATION',
+            'name' => 'gender_c',
+            'studio' => 'visible',
+            'label' => 'LBL_GENDER',
           ),
         ),
         4 => 
+        array (
+          0 => 
+          array (
+            'name' => 'kyc_completed_c',
+            'label' => 'LBL_KYC_COMPLETED',
+          ),
+          1 => 
+          array (
+            'name' => 'first_a_c_date_c',
+            'label' => 'LBL_FIRST_A_C_DATE',
+          ),
+        ),
+        5 => 
         array (
           0 => 
           array (
@@ -123,8 +127,14 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_PRODUCT_HOLDINGS',
           ),
+          1 => 
+          array (
+            'name' => 'email1',
+            'studio' => 'false',
+            'label' => 'LBL_EMAIL',
+          ),
         ),
-        5 => 
+        6 => 
         array (
           0 => 
           array (
@@ -132,8 +142,13 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_CROSS_UP_SELL_OPPORTUNITIES',
           ),
+          1 => 
+          array (
+            'name' => 'occupation_c',
+            'label' => 'LBL_OCCUPATION',
+          ),
         ),
-        6 => 
+        7 => 
         array (
           0 => 
           array (
@@ -156,7 +171,7 @@ array (
             ),
           ),
         ),
-        7 => 
+        8 => 
         array (
           0 => 
           array (
@@ -169,7 +184,7 @@ array (
             'label' => 'LBL_PRIORITY_Y_N',
           ),
         ),
-        8 => 
+        9 => 
         array (
           0 => 
           array (
@@ -177,7 +192,10 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_REMARKS',
           ),
-          1 => 
+        ),
+        10 => 
+        array (
+          0 => 
           array (
             'name' => 'assigned_user_name',
             'label' => 'LBL_ASSIGNED_TO',

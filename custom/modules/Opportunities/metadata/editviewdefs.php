@@ -34,6 +34,7 @@ array (
           'panelDefault' => 'expanded',
         ),
       ),
+      'syncDetailEditViews' => true,
     ),
     'panels' => 
     array (
@@ -51,8 +52,7 @@ array (
         array (
           0 => 
           array (
-            'name' => 'currency_id',
-            'label' => 'LBL_CURRENCY',
+            'name' => 'amount',
           ),
           1 => 
           array (
@@ -61,27 +61,20 @@ array (
         ),
         2 => 
         array (
-          0 => 
-          array (
-            'name' => 'amount',
-          ),
+          0 => 'sales_stage',
           1 => 'opportunity_type',
         ),
         3 => 
         array (
-          0 => 'sales_stage',
+          0 => 'probability',
           1 => 'lead_source',
         ),
         4 => 
         array (
-          0 => 'probability',
+          0 => 'next_step',
           1 => 'campaign_name',
         ),
         5 => 
-        array (
-          0 => 'next_step',
-        ),
-        6 => 
         array (
           0 => 
           array (
@@ -89,7 +82,7 @@ array (
             'label' => 'LBL_ACTUAL_DATE_CLOSED',
           ),
         ),
-        7 => 
+        6 => 
         array (
           0 => 
           array (
@@ -97,17 +90,21 @@ array (
             'label' => 'LBL_DATE_LOST_C',
           ),
         ),
-        8 => 
+        7 => 
         array (
           0 => 'description',
         ),
-        9 => 
+        8 => 
         array (
           0 => 
           array (
             'name' => 'reason_for_lost_c',
             'studio' => 'visible',
             'label' => 'LBL_REASON_FOR_LOST',
+          ),
+          1 => 
+          array (
+            'name' => 'scrm_account_opportunities_1_name',
           ),
         ),
       ),

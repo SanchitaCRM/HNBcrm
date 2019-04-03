@@ -47,31 +47,13 @@ array (
       array (
         'enctype' => 'multipart/form-data',
       ),
+      'syncDetailEditViews' => true,
     ),
     'panels' => 
     array (
       'lbl_case_information' => 
       array (
         0 => 
-        array (
-          0 => 'priority',
-        ),
-        1 => 
-        array (
-          0 => 
-          array (
-            'name' => 'state',
-            'comment' => 'The state of the case (i.e. open/closed)',
-            'label' => 'LBL_STATE',
-          ),
-          1 => 'status',
-        ),
-        2 => 
-        array (
-          0 => 'type',
-          1 => 'account_name',
-        ),
-        3 => 
         array (
           0 => 
           array (
@@ -80,7 +62,26 @@ array (
             array (
             ),
           ),
-          1 => 
+          1 => 'priority',
+        ),
+        1 => 
+        array (
+          0 => 'type',
+          1 => 'status',
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'state',
+            'comment' => 'The state of the case (i.e. open/closed)',
+            'label' => 'LBL_STATE',
+          ),
+          1 => 'account_name',
+        ),
+        3 => 
+        array (
+          0 => 
           array (
             'name' => 'suggestion_box',
             'label' => 'LBL_SUGGESTION_BOX',
@@ -103,23 +104,6 @@ array (
           ),
         ),
         6 => 
-        array (
-          0 => 
-          array (
-            'name' => 'internal',
-            'studio' => 'visible',
-            'label' => 'LBL_INTERNAL',
-          ),
-        ),
-        7 => 
-        array (
-          0 => 
-          array (
-            'name' => 'case_update_form',
-            'studio' => 'visible',
-          ),
-        ),
-        8 => 
         array (
           0 => 'assigned_user_name',
         ),

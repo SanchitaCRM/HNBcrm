@@ -49,26 +49,14 @@ array (
           0 => 'name',
           1 => 
           array (
-            'name' => 'users_scrm_loginlogout_1_name',
-            'label' => 'LBL_USERS_SCRM_LOGINLOGOUT_1_FROM_USERS_TITLE',
+            'name' => 'ip_address_c',
+            'label' => 'LBL_IP_ADDRESS',
           ),
         ),
         1 => 
         array (
           0 => 'date_entered',
-          1 => 
-          array (
-            'name' => 'logout_time_c',
-            'label' => 'LBL_LOGOUT_TIME',
-          ),
-        ),
-        2 => 
-        array (
-          0 => 
-          array (
-            'name' => 'ip_address_c',
-            'label' => 'LBL_IP_ADDRESS',
-          ),
+          1 => '',
         ),
       ),
     ),

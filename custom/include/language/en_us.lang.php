@@ -254,3 +254,19 @@ $app_list_strings['moduleListSingular']['Cases']='TIcket';
 $app_list_strings['record_type_display']['Cases']='TIcket';
 $app_list_strings['parent_type_display']['Cases']='TIcket';
 $app_list_strings['record_type_display_notes']['Cases']='TIcket';
+$GLOBALS['app_list_strings']['case_status_dom']=array (
+  'Open_New' => 'New',
+  'Open_Assigned' => 'Assigned',
+  'Closed_Closed' => 'Closed',
+  'Open_Pending Input' => 'Pending Input',
+  'Closed_Rejected' => 'Rejected',
+  'Closed_Duplicate' => 'Duplicate',
+);
+$GLOBALS['app_list_strings']['scrm_customers_country_code_c_list_cstm']=array (
+  '' => '',
+  'AF_AFG' => '93',
+  'IN_IND' => '91',
+  'LK_LKA' => '94',
+  'US_USA' => '1',
+  'YE_YEM' => '967',
+);

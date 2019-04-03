@@ -1,7 +1,7 @@
 <?php 
 if (!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
-//echo "Hello World!";
-require_once('data/SugarBean.php');  
+echo "Hello World!"; exit;
+/* require_once('data/SugarBean.php');  
 require_once('./include/SugarDateTime.php');  
 global $db;
 $bean = new SugarBean();
@@ -16,6 +16,8 @@ foreach($data as $val){
   $result = $bean->db->query($sql);
   $data1 = $bean->db->execute($result);
   echo "insert record";
-}
+} */
+
+
 
 ?>

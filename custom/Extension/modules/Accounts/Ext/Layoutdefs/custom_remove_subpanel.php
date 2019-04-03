@@ -3,7 +3,7 @@
 /*Custom remove subpanels*/
 unset($layout_defs['Accounts']['subpanel_setup']['project']);
 
-unset($layout_defs['Accounts']['subpanel_setup']['opportunities']);
+// unset($layout_defs['Accounts']['subpanel_setup']['opportunities']);
 
 unset($layout_defs['Accounts']['subpanel_setup']['campaigns']);
 

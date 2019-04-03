@@ -27,7 +27,6 @@ if (!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
     php version : 5.6
     */
 	class RandomNumberGenerator {
-
 		function randomNumber($bean, $event, $arguments){
       global $db;
       $sql = "SELECT count(id) as total FROM cases";
