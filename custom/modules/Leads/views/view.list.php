@@ -45,9 +45,6 @@ class LeadsViewList extends ViewList
 });	
 			})
 		
-		
-		
-		
 		</script>
 EOD;
 		parent::display();
